@@ -122,7 +122,7 @@ public class UserService {
     @Value("${app.intention.delay}")
     private long intentionDelay;
 
-    public static void removeUserDataCascading(User user, UserDeleteParams userDeleteParam) {
+  /*  public static void removeUserDataCascading(User user, UserDeleteParams userDeleteParam) {
 
         UserRepository userRepo = userDeleteParam.getUserRepo();
         UserLikeRepository userLikeRepo = userDeleteParam.getUserLikeRepo();
@@ -270,6 +270,192 @@ public class UserService {
         conversationRepo.flush();
         userRepo.flush();
     }
+*/
+
+    //Refactory Long Method to small methods
+    public static void removeUserDataCascading(User user, UserDeleteParams userDeleteParam) {
+        UserRepository userRepo = userDeleteParam.getUserRepo();
+        UserLikeRepository userLikeRepo = userDeleteParam.getUserLikeRepo();
+        ConversationRepository conversationRepo = userDeleteParam.getConversationRepo();
+        UserNotificationRepository userNotificationRepo = userDeleteParam.getUserNotificationRepo();
+        UserHideRepository userHideRepo = userDeleteParam.getUserHideRepo();
+        UserBlockRepository userBlockRepo = userDeleteParam.getUserBlockRepo();
+        UserReportRepository userReportRepo = userDeleteParam.getUserReportRepo();
+        UserVerificationPictureRepository userVerificationPictureRepo = userDeleteParam.getUserVerificationPictureRepo();
+
+        deleteUserLikes(user, userLikeRepo, userRepo);
+        deleteUserNotifications(user, userNotificationRepo, userRepo);
+        deleteUserHides(user, userHideRepo, userRepo);
+        deleteUserBlocks(user, userBlockRepo, userRepo);
+        deleteUserReports(user, userReportRepo, userRepo);
+        deleteConversations(user, conversationRepo, userRepo);
+        deleteUserVerifications(user, userVerificationPictureRepo);
+
+        userRepo.flush();
+        userLikeRepo.flush();
+        userNotificationRepo.flush();
+        userHideRepo.flush();
+        userBlockRepo.flush();
+        userReportRepo.flush();
+        conversationRepo.flush();
+        userVerificationPictureRepo.flush();
+    }
+
+    // DELETE USER LIKE
+    private static void deleteUserLikes(User user, UserLikeRepository userLikeRepo, UserRepository userRepo) {
+        List<UserLike> userLikesFrom = userLikeRepo.findByUserFrom(user);
+        for (UserLike like : userLikesFrom) {
+            User userTo = like.getUserTo();
+            if (userTo != null && userTo.getLikedBy() != null) {
+                userTo.getLikedBy().remove(like);
+                userRepo.save(userTo);
+            }
+            like.setUserTo(null);
+            userLikeRepo.save(like);
+        }
+
+        List<UserLike> userLikesTo = userLikeRepo.findByUserTo(user);
+        for (UserLike like : userLikesTo) {
+            User userFrom = like.getUserFrom();
+            if (userFrom != null && userFrom.getLikes() != null) {
+                userFrom.getLikes().remove(like);
+                userRepo.save(userFrom);
+            }
+            like.setUserFrom(null);
+            userLikeRepo.save(like);
+        }
+    }
+
+    // DELETE USER NOTIFICATION
+    private static void deleteUserNotifications(User user, UserNotificationRepository userNotificationRepo, UserRepository userRepo) {
+        List<UserNotification> notificationsFrom = userNotificationRepo.findByUserFrom(user);
+        for (UserNotification notification : notificationsFrom) {
+            User userTo = notification.getUserTo();
+            if (userTo != null && userTo.getNotificationsFrom() != null) {
+                userTo.getNotificationsFrom().remove(notification);
+                userRepo.save(userTo);
+            }
+            notification.setUserTo(null);
+            userNotificationRepo.save(notification);
+        }
+
+        List<UserNotification> notificationsTo = userNotificationRepo.findByUserTo(user);
+        for (UserNotification notification : notificationsTo) {
+            User userFrom = notification.getUserFrom();
+            if (userFrom != null && userFrom.getNotifications() != null) {
+                userFrom.getNotifications().remove(notification);
+                userRepo.save(userFrom);
+            }
+            notification.setUserFrom(null);
+            userNotificationRepo.save(notification);
+        }
+    }
+
+    // DELETE USER HIDE
+    private static void deleteUserHides(User user, UserHideRepository userHideRepo, UserRepository userRepo) {
+        List<UserHide> hidesFrom = userHideRepo.findByUserFrom(user);
+        for (UserHide hide : hidesFrom) {
+            User userTo = hide.getUserTo();
+            if (userTo != null && userTo.getHiddenByUsers() != null) {
+                userTo.getHiddenByUsers().remove(hide);
+                userRepo.save(userTo);
+            }
+            hide.setUserTo(null);
+            userHideRepo.save(hide);
+        }
+
+        List<UserHide> hidesTo = userHideRepo.findByUserTo(user);
+        for (UserHide hide : hidesTo) {
+            User userFrom = hide.getUserFrom();
+            if (userFrom != null && userFrom.getHiddenUsers() != null) {
+                userFrom.getHiddenUsers().remove(hide);
+                userRepo.save(userFrom);
+            }
+            hide.setUserFrom(null);
+            userHideRepo.save(hide);
+        }
+    }
+
+    // DELETE USER BLOCKS
+    private static void deleteUserBlocks(User user, UserBlockRepository userBlockRepo, UserRepository userRepo) {
+        List<UserBlock> blocksFrom = userBlockRepo.findByUserFrom(user);
+        for (UserBlock block : blocksFrom) {
+            User userTo = block.getUserTo();
+            if (userTo != null && userTo.getBlockedByUsers() != null) {
+                userTo.getBlockedByUsers().remove(block);
+                userRepo.save(userTo);
+            }
+            block.setUserTo(null);
+            userBlockRepo.save(block);
+        }
+
+        List<UserBlock> blocksTo = userBlockRepo.findByUserTo(user);
+        for (UserBlock block : blocksTo) {
+            User userFrom = block.getUserFrom();
+            if (userFrom != null && userFrom.getBlockedUsers() != null) {
+                userFrom.getBlockedUsers().remove(block);
+                userRepo.save(userFrom);
+            }
+            block.setUserFrom(null);
+            userBlockRepo.save(block);
+        }
+    }
+
+    // DELETE USER REPORT
+    private static void deleteUserReports(User user, UserReportRepository userReportRepo, UserRepository userRepo) {
+        List<UserReport> reportsFrom = userReportRepo.findByUserFrom(user);
+        for (UserReport report : reportsFrom) {
+            User userTo = report.getUserTo();
+            if (userTo != null && userTo.getReportedByUsers() != null) {
+                userTo.getReportedByUsers().remove(report);
+                userRepo.save(userTo);
+            }
+            report.setUserTo(null);
+            userReportRepo.save(report);
+        }
+
+        List<UserReport> reportsTo = userReportRepo.findByUserTo(user);
+        for (UserReport report : reportsTo) {
+            User userFrom = report.getUserFrom();
+            if (userFrom != null && userFrom.getReported() != null) {
+                userFrom.getReported().remove(report);
+                userRepo.save(userFrom);
+            }
+            report.setUserFrom(null);
+            userReportRepo.save(report);
+        }
+    }
+
+    // DELETE USER CONVERSATION
+    private static void deleteConversations(User user, ConversationRepository conversationRepo, UserRepository userRepo) {
+        List<Conversation> userConversations = conversationRepo.findByUsers_Id(user.getId());
+        for (Conversation conversation : userConversations) {
+            for (User u : conversation.getUsers()) {
+                if (u != null && u.getConversations() != null) {
+                    u.getConversations().remove(conversation);
+                    userRepo.save(u);
+                }
+            }
+            conversationRepo.delete(conversation);
+        }
+    }
+
+    // DELETE USER VERIFICATION
+    private static void deleteUserVerifications(User user, UserVerificationPictureRepository userVerificationPictureRepo) {
+        List<UserVerificationPicture> verificationsNo = userVerificationPictureRepo.findByUserNo(user);
+        for (UserVerificationPicture verification : verificationsNo) {
+            verification.getUserNo().remove(user);
+            userVerificationPictureRepo.save(verification);
+        }
+
+        List<UserVerificationPicture> verificationsYes = userVerificationPictureRepo.findByUserYes(user);
+        for (UserVerificationPicture verification : verificationsYes) {
+            verification.getUserYes().remove(user);
+            userVerificationPictureRepo.save(verification);
+        }
+    }
+
+
 
     public static String stripB64Type(String s) {
         if (s.contains(",")) {
