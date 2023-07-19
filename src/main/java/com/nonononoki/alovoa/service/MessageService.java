@@ -37,7 +37,7 @@ public class MessageService {
 	@Autowired
 	private NotificationService notificationService;
 
-	public void send(Long convoId, String message)
+/*	public void send(Long convoId, String message)
 			throws AlovoaException, GeneralSecurityException, IOException, JoseException {
 
 		User currUser = authService.getCurrentUser(true);
@@ -90,7 +90,84 @@ public class MessageService {
 
 		notificationService.newMessage(user);
 	}
-	
+	*/
+
+	//Refactory Complex Method to small methods, follow SRP
+	public void send(Long convoId, String message) throws AlovoaException, GeneralSecurityException, IOException, JoseException {
+		User currUser = authService.getCurrentUser(true);
+		Conversation c = getConversationById(convoId);
+		checkConversation(c, currUser);
+		checkMessageLength(message);
+
+		User user = c.getPartner(currUser);
+		checkBlockedUsers(currUser, user);
+
+		Message newMessage = createNewMessage(c, message, user);
+		saveMessage(c, newMessage);
+
+		notificationService.newMessage(user);
+	}
+
+	// get conversation
+	private Conversation getConversationById(Long convoId) throws AlovoaException {
+		Conversation c = conversationRepo.findById(convoId).orElse(null);
+		if (c == null) {
+			throw new AlovoaException("conversation_not_found");
+		}
+		return c;
+	}
+
+	private void checkConversation(Conversation conversation, User currentUser) throws AlovoaException {
+		if (!conversation.containsUser(currentUser)) {
+			throw new AlovoaException("user_not_in_conversation");
+		}
+	}
+
+	private void checkMessageLength(String message) throws AlovoaException {
+		if (message.length() > maxMessageSize) {
+			throw new AlovoaException("message_length_too_long");
+		}
+	}
+
+	private void checkBlockedUsers(User currentUser, User partnerUser) throws AlovoaException {
+		if (checkUserBlocked(currentUser, partnerUser) || checkUserBlocked(partnerUser, currentUser)) {
+			throw new AlovoaException("user_blocked");
+		}
+	}
+
+	private boolean checkUserBlocked(User userFrom, User userTo) {
+		return userFrom.getBlockedUsers().stream()
+				.anyMatch(o -> o.getUserTo().getId().equals(userTo.getId()));
+	}
+
+	private Message createNewMessage(Conversation conversation, String content, User userFrom) {
+		Message message = new Message();
+		message.setContent(content);
+		message.setConversation(conversation);
+		message.setDate(new Date());
+		message.setUserFrom(userFrom);
+		message.setUserTo(conversation.getPartner(userFrom));
+
+		if (Tools.isURLValid(content)) {
+			message.setAllowedFormatting(true);
+		}
+		return message;
+	}
+
+	private void saveMessage(Conversation conversation, Message message) {
+		conversation.getMessages().add(message);
+		conversationRepo.saveAndFlush(conversation);
+
+		int numMessages = conversation.getMessages().size();
+		if (numMessages > maxConvoMessages) {
+			Message oldestMessage = Collections.min(conversation.getMessages(), Comparator.comparing(Message::getDate));
+			conversation.getMessages().remove(oldestMessage);
+		}
+
+		conversation.setLastUpdated(new Date());
+		conversationRepo.saveAndFlush(conversation);
+	}
+
 	public Date updateCheckedDate(Conversation c) throws AlovoaException {
 		User user = authService.getCurrentUser(true);
 		Date now = new Date();
