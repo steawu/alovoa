@@ -36,7 +36,7 @@ public class AdminVerificationResource {
     private AuthService authService;
     @Autowired
     private UserService userService;
-        /// sswww
+
     @GetMapping(URL)
     public ModelAndView admin() throws AlovoaException, InvalidAlgorithmParameterException, IllegalBlockSizeException, NoSuchPaddingException,
             UnsupportedEncodingException, BadPaddingException, NoSuchAlgorithmException, InvalidKeyException {

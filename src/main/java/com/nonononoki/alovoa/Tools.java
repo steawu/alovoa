@@ -142,12 +142,13 @@ public class Tools {
 		return !"0".equals(b);
 	}
 
+    public static final int DEFAULT_DISTANCE = 99999;
 	public static int getDistanceToUser(User user, User currUser) {
 		try {
 			return calcDistanceKm(user.getLocationLatitude(), user.getLocationLongitude(),
 					currUser.getLocationLatitude(), currUser.getLocationLongitude());
 		} catch (Exception e) {
-			return 99999;
+			return DEFAULT_DISTANCE;
 		}
 	}
 
