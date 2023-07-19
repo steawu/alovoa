@@ -254,7 +254,7 @@ public class Tools {
 		}
 	}
 
-	public static String getAuthParams(SecurityConfig securityConfig, String httpSessionId, String username,
+/*	public static String getAuthParams(SecurityConfig securityConfig, String httpSessionId, String username,
 			String firstName, int page, String password) {
 		String cookieData = securityConfig.getOAuthRememberMeServices().getRememberMeCookieData(username, password);
 		StringBuilder builder = new StringBuilder();
@@ -265,9 +265,32 @@ public class Tools {
 		}
 		return builder.toString();
 	}
+*/
 
-	public static String getAuthParams(SecurityConfig securityConfig, String httpSessionId, String username,
+	//Refactory Long Parameter List by introducing a Parameter Object
+	public static String getAuthParams(AuthParams authParams) {
+		String cookieData = authParams.getSecurityConfig().getOAuthRememberMeServices().getRememberMeCookieData(authParams.getUsername(), authParams.getPassword());
+		StringBuilder builder = new StringBuilder();
+		builder.append("?remember-me=").append(cookieData).append("&jsessionid=").append(authParams.getHttpSessionId()).append("&page=")
+				.append(authParams.getPage());
+		if (authParams.getFirstName() != null) {
+			builder.append("&firstName=").append(authParams.getFirstName());
+		}
+		return builder.toString();
+	}
+
+
+/*	public static String getAuthParams(SecurityConfig securityConfig, String httpSessionId, String username,
 			String firstName, int page) {
+		AuthParams au
 		return getAuthParams(securityConfig, httpSessionId, username, firstName, page, null);
 	}
+	*/
+
+	public static String getAuthParams(SecurityConfig securityConfig, String httpSessionId, String username,
+									   String firstName, int page) {
+		AuthParams authParams = new AuthParams(securityConfig, httpSessionId, username, firstName, page);
+		return getAuthParams(authParams);
+	}
+
 }

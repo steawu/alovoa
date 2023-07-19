@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
+import com.nonononoki.alovoa.AuthParams;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -56,7 +57,8 @@ public class SuccessHandler implements AuthenticationSuccessHandler {
 				if(user.getProfilePicture() == null && user.getDescription() == null) {
 					page = PAGE_ONBOARDING;
 				}
-				redirectUrl = redirectUrl + Tools.getAuthParams(securityConfig, httpSession.getId(), user.getEmail(), user.getFirstName(), page, user.getPassword());
+				AuthParams authParams = new AuthParams(securityConfig, httpSession.getId(), user.getEmail(), user.getFirstName(), page, user.getPassword());
+				redirectUrl = redirectUrl + Tools.getAuthParams(authParams);
 				response.setHeader(AuthFilter.REDIRECT_URL, redirectUrl);
 				return;
 			} catch (AlovoaException e) {
