@@ -18,10 +18,10 @@ class ToolsTest {
 
 	@Test
 	void test() throws Exception {
-		int dist = (int) Math.round(Tools.calcDistanceKm(0, 0, 0, 0));
+		int dist = (int) Math.round(DistanceUtils.calcDistanceKm(0, 0, 0, 0));
 		assertEquals(0, dist);
 		
-		int dist2 = (int) Math.round(Tools.calcDistanceKm(0.45, 0, 0, 0));
+		int dist2 = (int) Math.round(DistanceUtils.calcDistanceKm(0.45, 0, 0, 0));
 		assertEquals(50, dist2);
 
 		assertTrue(Tools.isTextContainingLineFromFile(Tools.TEMP_EMAIL_FILE_NAME, "jmpant.com"));
@@ -41,8 +41,8 @@ class ToolsTest {
 
 		UserDates userDates1 = new UserDates();
 		UserDates userDates2 = new UserDates();
-		userDates1.setDateOfBirth(Tools.localDateToDate(LocalDate.now().minusYears(20)));
-		userDates2.setDateOfBirth(Tools.localDateToDate(LocalDate.now().minusYears(20)));
+		userDates1.setDateOfBirth(DateUtils.localDateToDate(LocalDate.now().minusYears(20)));
+		userDates2.setDateOfBirth(DateUtils.localDateToDate(LocalDate.now().minusYears(20)));
 
 		UserIntention meet = new UserIntention();
 		UserIntention date = new UserIntention();
@@ -90,7 +90,7 @@ class ToolsTest {
 		assertFalse(Tools.usersCompatible(user1, user2));
 		user1.setIntention(meet);
 
-		userDates1.setDateOfBirth(Tools.localDateToDate(LocalDate.now().minusYears(16)));
+		userDates1.setDateOfBirth(DateUtils.localDateToDate(LocalDate.now().minusYears(16)));
 		user1.setDates(userDates1);
 		assertFalse(Tools.usersCompatible(user1, user2));
 	}
@@ -100,7 +100,7 @@ class ToolsTest {
 		User user1 = new User("test@test.com");
 
 		UserDates userDates1 = new UserDates();
-		userDates1.setDateOfBirth(Tools.localDateToDate(LocalDate.now().minusYears(20)));
+		userDates1.setDateOfBirth(DateUtils.localDateToDate(LocalDate.now().minusYears(20)));
 		user1.setDates(userDates1);
 
 		user1.setPreferedMinAge(18);
@@ -109,7 +109,7 @@ class ToolsTest {
 		assertEquals(18, user1.getPreferedMinAge());
 		assertEquals(45, user1.getPreferedMaxAge());
 
-		userDates1.setDateOfBirth(Tools.localDateToDate(LocalDate.now().minusYears(21)));
+		userDates1.setDateOfBirth(DateUtils.localDateToDate(LocalDate.now().minusYears(21)));
 
 		assertEquals(19, user1.getPreferedMinAge());
 		assertEquals(46, user1.getPreferedMaxAge());

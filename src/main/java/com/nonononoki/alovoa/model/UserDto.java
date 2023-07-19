@@ -1,5 +1,6 @@
 package com.nonononoki.alovoa.model;
 
+import com.nonononoki.alovoa.DateUtils;
 import com.nonononoki.alovoa.Tools;
 import com.nonononoki.alovoa.component.TextEncryptorConverter;
 import com.nonononoki.alovoa.entity.User;
@@ -143,7 +144,7 @@ public class UserDto {
 
         if (!user.isAdmin()) {
             LocalDateTime now = LocalDateTime.now();
-            LocalDateTime activeDateTime = Tools.dateToLocalDateTime(user.getDates().getActiveDate());
+            LocalDateTime activeDateTime = DateUtils.dateToLocalDateTime(user.getDates().getActiveDate());
             if (activeDateTime.isAfter(now.minusMinutes(LA_STATE_ACTIVE_1))) {
                 dto.setLastActiveState(1);
             } else if (activeDateTime.isAfter(now.minusDays(LA_STATE_ACTIVE_2))) {

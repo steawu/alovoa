@@ -8,6 +8,7 @@ import static org.mockito.ArgumentMatchers.any;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import com.nonononoki.alovoa.DateUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -267,7 +268,7 @@ class SearchAndMessageServiceTest {
 		List<UserDto> ageSearchDto2 = searchService.search(0.0, 0.0, 50, 1).getUsers();
 		assertEquals(2, ageSearchDto2.size()); // TODO check for incompatible
 
-		user2.getDates().setDateOfBirth(Tools.localDateToDate(LocalDateTime.now().minusYears(minAge).toLocalDate()));
+		user2.getDates().setDateOfBirth(DateUtils.localDateToDate(LocalDateTime.now().minusYears(minAge).toLocalDate()));
 		Mockito.when(authService.getCurrentUser()).thenReturn(user2);
 		Mockito.when(authService.getCurrentUser(true)).thenReturn(user2);
 		userService.updateMinAge(minAge);

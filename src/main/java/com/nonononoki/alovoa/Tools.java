@@ -77,13 +77,18 @@ public class Tools {
 		}
 	}
 
-	public static Date ageToDate(int age) {
+/*	public static Date ageToDate(int age) {
 		Calendar calendar = Calendar.getInstance();
 		calendar.add(Calendar.YEAR, age * (-1));
 		return calendar.getTime();
 	}
 
-	public static Date localDateToDate(LocalDate localDate) {
+*/
+	//Refactory ageToDate
+	public static Date ageToDate(int age) {
+		return DateUtils.ageToDate(age);
+	}
+/*	public static Date localDateToDate(LocalDate localDate) {
 		return Date.from(localDate.atStartOfDay(ZoneId.systemDefault()).toInstant());
 	}
 
@@ -94,8 +99,8 @@ public class Tools {
 	public static LocalDateTime dateToLocalDateTime(Date date) {
 		return date.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
 	}
-
-	public static int calcUserAge(User user) {
+*/
+/*	public static int calcUserAge(User user) {
 		LocalDate currentDate = LocalDate.now();
 		return Period.between(Tools.dateToLocalDate(user.getDates().getDateOfBirth()), currentDate).getYears();
 	}
@@ -103,6 +108,15 @@ public class Tools {
 	public static int calcUserAge(Date dateOfBirth) {
 		LocalDate currentDate = LocalDate.now();
 		return Period.between(Tools.dateToLocalDate(dateOfBirth), currentDate).getYears();
+	}
+*/
+	//Refactory calcUserAge, calcUserAge
+	public static int calcUserAge(User user) {
+		return DateUtils.calcUserAge(user);
+	}
+
+	public static int calcUserAge(Date dateOfBirth) {
+		return DateUtils.calcUserAge(dateOfBirth);
 	}
 
 	public static String inputStreamToString(InputStream inputStream) throws IOException {
@@ -144,12 +158,10 @@ public class Tools {
 
     public static final int DEFAULT_DISTANCE = 99999;
 	public static int getDistanceToUser(User user, User currUser) {
-		try {
-			return calcDistanceKm(user.getLocationLatitude(), user.getLocationLongitude(),
-					currUser.getLocationLatitude(), currUser.getLocationLongitude());
-		} catch (Exception e) {
-			return DEFAULT_DISTANCE;
-		}
+		return DistanceUtils.calcDistanceKm(
+				user.getLocationLatitude(), user.getLocationLongitude(),
+				currUser.getLocationLatitude(), currUser.getLocationLongitude()
+		);
 	}
 
 	// https://stackoverflow.com/a/45732035
@@ -170,7 +182,7 @@ public class Tools {
 	}
 
 	// https://stackoverflow.com/questions/27928/calculate-distance-between-two-latitude-longitude-points-haversine-formula/12600225#12600225
-	public static final double AVERAGE_RADIUS_OF_EARTH_KM = 6371;
+	/* public static final double AVERAGE_RADIUS_OF_EARTH_KM = 6371;
 
 	public static int calcDistanceKm(double userLat, double userLng, double venueLat, double venueLng) {
 
@@ -184,7 +196,7 @@ public class Tools {
 
 		return (int) (Math.round(AVERAGE_RADIUS_OF_EARTH_KM * c));
 	}
-
+*/
 	public static boolean usersCompatible(User user1, User user2) {
 		if (user2.getPreferedGenders() == null || user1.getPreferedGenders() == null || user1.getDates() == null
 				|| user2.getDates() == null) {
@@ -204,12 +216,12 @@ public class Tools {
 	// This method subtracts user date of birth with passed preferred min/max age
 	public static int convertPrefAgeToRelativeYear(Date userDateOfBirth, int prefAge) {
 		LocalDate currentDate = LocalDate.now();
-		return prefAge - Period.between(Tools.dateToLocalDate(userDateOfBirth), currentDate).getYears();
+		return prefAge - Period.between(DateUtils.dateToLocalDate(userDateOfBirth), currentDate).getYears();
 	}
 
 	public static int convertPrefAgeToExactYear(Date userDateOfBirth, int prefAge) {
 		LocalDate currentDate = LocalDate.now();
-		return Period.between(Tools.dateToLocalDate(userDateOfBirth), currentDate).getYears() + prefAge;
+		return Period.between(DateUtils.dateToLocalDate(userDateOfBirth), currentDate).getYears() + prefAge;
 	}
 
 	private static final String STR_NUM_BILLION = "B";
