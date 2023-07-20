@@ -1,0 +1,576 @@
+Project Name,Package Name,Type Name,Method Name,LOC,CC,PC,Line no,IsTest,Main prod class tested,Production classes tested
+a3,com.nonononoki.alovoa,ToolsTest,test,7,1,0,19,1,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa,ToolsTest,testUsersCompatible,47,1,0,37,1,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.entity.User
+a3,com.nonononoki.alovoa,ToolsTest,testMinMaxAgePreferences,17,1,0,98,1,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.entity.User
+a3,com.nonononoki.alovoa,ToolsTest,testLargeNumberToString,6,1,0,124,1,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa,AlovoaApplication,main,4,1,1,21,0,,
+a3,com.nonononoki.alovoa,Tools,Tools,3,1,0,29,0,,
+a3,com.nonononoki.alovoa,Tools,cleanEmail,10,3,1,60,0,,
+a3,com.nonononoki.alovoa,Tools,getUserLocale,9,2,1,71,0,,
+a3,com.nonononoki.alovoa,Tools,ageToDate,5,1,1,80,0,,
+a3,com.nonononoki.alovoa,Tools,localDateToDate,3,1,1,86,0,,
+a3,com.nonononoki.alovoa,Tools,dateToLocalDate,3,1,1,90,0,,
+a3,com.nonononoki.alovoa,Tools,dateToLocalDateTime,3,1,1,94,0,,
+a3,com.nonononoki.alovoa,Tools,calcUserAge,4,1,1,98,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa,Tools,calcUserAge,4,1,1,103,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa,Tools,inputStreamToString,3,1,1,108,0,,
+a3,com.nonononoki.alovoa,Tools,getResourceText,4,1,1,112,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa,Tools,resourceToB64,5,1,1,117,0,,
+a3,com.nonononoki.alovoa,Tools,imageToB64,4,1,2,123,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa,Tools,isTextContainingLineFromFile,10,3,2,128,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa,Tools,binaryStringToBoolean,3,1,1,141,0,,
+a3,com.nonononoki.alovoa,Tools,getDistanceToUser,8,1,2,146,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa,Tools,getBase64Size,14,4,1,157,0,,
+a3,com.nonononoki.alovoa,Tools,calcDistanceKm,7,1,4,175,0,,
+a3,com.nonononoki.alovoa,Tools,usersCompatible,8,2,2,188,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.entity.User
+a3,com.nonononoki.alovoa,Tools,convertPrefAgeToRelativeYear,4,1,2,205,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa,Tools,convertPrefAgeToExactYear,4,1,2,210,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa,Tools,largeNumberToString,19,4,1,219,0,,
+a3,com.nonononoki.alovoa,Tools,getCountryEmoji,8,2,1,238,0,,
+a3,com.nonononoki.alovoa,Tools,isURLValid,10,1,1,247,0,,
+a3,com.nonononoki.alovoa,Tools,getAuthParams,9,2,6,257,0,com.nonononoki.alovoa.config.SecurityConfig,com.nonononoki.alovoa.config.SecurityConfig; com.nonononoki.alovoa.component.CustomTokenBasedRememberMeServices
+a3,com.nonononoki.alovoa,Tools,getAuthParams,3,1,5,269,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.util,AuthTestUtil,setAuthTo,3,1,1,15,0,com.nonononoki.alovoa.util.AuthTestUtil,com.nonononoki.alovoa.util.AuthTestUtil; com.nonononoki.alovoa.entity.User
+a3,com.nonononoki.alovoa.util,AuthTestUtil,setAuthTo,4,1,3,24,0,,
+a3,com.nonononoki.alovoa.runner,TextEncryptorConverterTest,decrypt,5,1,0,33,1,com.nonononoki.alovoa.component.TextEncryptorConverter,com.nonononoki.alovoa.component.TextEncryptorConverter
+a3,com.nonononoki.alovoa.runner,TextEncryptorConverterTest,encrypt,5,1,0,40,1,com.nonononoki.alovoa.component.TextEncryptorConverter,com.nonononoki.alovoa.component.TextEncryptorConverter
+a3,com.nonononoki.alovoa.html,PrivacyResourceTest,test,3,1,0,17,1,com.nonononoki.alovoa.html.PrivacyResource,com.nonononoki.alovoa.html.PrivacyResource
+a3,com.nonononoki.alovoa.html,DonateListResourceTest,test,3,1,0,17,1,com.nonononoki.alovoa.html.DonateListResource,com.nonononoki.alovoa.html.DonateListResource
+a3,com.nonononoki.alovoa.html,UserProfileResourceTest,before,4,1,0,77,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.html,UserProfileResourceTest,after,3,1,0,85,0,,
+a3,com.nonononoki.alovoa.html,UserProfileResourceTest,test,17,1,0,90,1,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.html,MessageResourceTest,before,4,1,0,69,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.html,MessageResourceTest,after,3,1,0,77,0,,
+a3,com.nonononoki.alovoa.html,MessageResourceTest,test,24,1,0,82,1,com.nonononoki.alovoa.html.MessageResource,com.nonononoki.alovoa.html.MessageResource; com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.html,ImprintResourceTest,test,3,1,0,17,1,com.nonononoki.alovoa.html.ImprintResource,com.nonononoki.alovoa.html.ImprintResource
+a3,com.nonononoki.alovoa.html,PasswordResourceTest,before,4,1,0,65,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.html,PasswordResourceTest,after,3,1,0,73,0,,
+a3,com.nonononoki.alovoa.html,PasswordResourceTest,test,6,1,0,78,1,com.nonononoki.alovoa.html.PasswordResource,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.html.PasswordResource
+a3,com.nonononoki.alovoa.html,BlockedUsersResourceTest,before,4,1,0,67,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.html,BlockedUsersResourceTest,after,3,1,0,75,0,,
+a3,com.nonononoki.alovoa.html,BlockedUsersResourceTest,test,13,1,0,80,1,com.nonononoki.alovoa.html.BlockedUsersResource,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.html.BlockedUsersResource
+a3,com.nonononoki.alovoa.html,TermsConditionsResourceTest,test,3,1,0,17,1,com.nonononoki.alovoa.html.TermsConditionsResource,com.nonononoki.alovoa.html.TermsConditionsResource
+a3,com.nonononoki.alovoa.html,DonateResourceTest,before,4,1,0,65,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.html,DonateResourceTest,after,3,1,0,73,0,,
+a3,com.nonononoki.alovoa.html,DonateResourceTest,test,5,1,0,78,1,com.nonononoki.alovoa.html.DonateResource,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.html.DonateResource
+a3,com.nonononoki.alovoa.html,LoginResourceTest,test,3,1,0,17,1,com.nonononoki.alovoa.html.LoginResource,com.nonononoki.alovoa.html.LoginResource
+a3,com.nonononoki.alovoa.html,SearchResourceTest,before,4,1,0,65,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.html,SearchResourceTest,after,3,1,0,73,0,,
+a3,com.nonononoki.alovoa.html,SearchResourceTest,test,5,1,0,78,1,com.nonononoki.alovoa.html.SearchResource,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.html.SearchResource
+a3,com.nonononoki.alovoa.html,RegisterResourceTest,test,3,1,0,17,1,com.nonononoki.alovoa.html.RegisterResource,com.nonononoki.alovoa.html.RegisterResource
+a3,com.nonononoki.alovoa.html,FaqResourceTest,test,3,1,0,17,1,com.nonononoki.alovoa.html.FaqResource,com.nonononoki.alovoa.html.FaqResource
+a3,com.nonononoki.alovoa.html,NotificationResourceTest,before,4,1,0,67,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.html,NotificationResourceTest,after,3,1,0,75,0,,
+a3,com.nonononoki.alovoa.html,NotificationResourceTest,test,14,1,0,80,1,com.nonononoki.alovoa.html.NotificationResource,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.html.NotificationResource
+a3,com.nonononoki.alovoa.html,TosResourceTest,test,3,1,0,17,1,com.nonononoki.alovoa.html.TosResource,com.nonononoki.alovoa.html.TosResource
+a3,com.nonononoki.alovoa.html,IndexResourceTest,test,3,1,0,17,1,com.nonononoki.alovoa.html.IndexResource,com.nonononoki.alovoa.html.IndexResource
+a3,com.nonononoki.alovoa.html,AdminResourceTest,test,5,1,0,29,1,com.nonononoki.alovoa.html.AdminResource,com.nonononoki.alovoa.html.AdminResource; com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.html,ProfileResourceTest,before,4,1,0,65,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.html,ProfileResourceTest,after,3,1,0,73,0,,
+a3,com.nonononoki.alovoa.html,ProfileResourceTest,test,5,1,0,78,1,com.nonononoki.alovoa.html.ProfileResource,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.html.ProfileResource
+a3,com.nonononoki.alovoa.html,DeleteAccountResourceTest,before,4,1,0,65,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.html,DeleteAccountResourceTest,after,3,1,0,73,0,,
+a3,com.nonononoki.alovoa.html,DeleteAccountResourceTest,test,5,1,0,78,1,com.nonononoki.alovoa.html.DeleteAccountResource,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.html.DeleteAccountResource
+a3,com.nonononoki.alovoa.html,InfoResource,imprint,5,1,0,31,0,com.nonononoki.alovoa.repo.UserRepository,com.nonononoki.alovoa.repo.UserRepository
+a3,com.nonononoki.alovoa.html,NotificationResource,notification,21,3,0,41,0,com.nonononoki.alovoa.model.NotificationDto,com.nonononoki.alovoa.model.NotificationDto; com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.html,ApiResource,resourceDonate,3,1,0,56,0,com.nonononoki.alovoa.html.DonateResource,com.nonononoki.alovoa.html.DonateResource
+a3,com.nonononoki.alovoa.html,ApiResource,resourceChats,3,1,0,63,0,com.nonononoki.alovoa.html.MessageResource,com.nonononoki.alovoa.html.MessageResource
+a3,com.nonononoki.alovoa.html,ApiResource,resourceChatsDetail,3,1,1,70,0,com.nonononoki.alovoa.html.MessageResource,com.nonononoki.alovoa.html.MessageResource
+a3,com.nonononoki.alovoa.html,ApiResource,resourceNotification,3,1,0,77,0,com.nonononoki.alovoa.html.NotificationResource,com.nonononoki.alovoa.html.NotificationResource
+a3,com.nonononoki.alovoa.html,ApiResource,resourceProfile,3,1,0,84,0,com.nonononoki.alovoa.html.ProfileResource,com.nonononoki.alovoa.html.ProfileResource
+a3,com.nonononoki.alovoa.html,ApiResource,resourceProfileView,3,1,1,91,0,com.nonononoki.alovoa.html.UserProfileResource,com.nonononoki.alovoa.html.UserProfileResource
+a3,com.nonononoki.alovoa.html,ApiResource,resourceSearch,3,1,0,98,0,com.nonononoki.alovoa.html.SearchResource,com.nonononoki.alovoa.html.SearchResource
+a3,com.nonononoki.alovoa.html,ApiResource,userOnboarding,3,1,0,105,0,com.nonononoki.alovoa.html.ProfileOnboardingResource,com.nonononoki.alovoa.html.ProfileOnboardingResource
+a3,com.nonononoki.alovoa.html,ApiResource,blockedUsers,3,1,0,112,0,com.nonononoki.alovoa.html.BlockedUsersResource,com.nonononoki.alovoa.html.BlockedUsersResource
+a3,com.nonononoki.alovoa.html,ApiResource,likedUsers,3,1,0,119,0,com.nonononoki.alovoa.html.LikedUsersResource,com.nonononoki.alovoa.html.LikedUsersResource
+a3,com.nonononoki.alovoa.html,ApiResource,dislikedUsers,3,1,0,126,0,com.nonononoki.alovoa.html.DislikedUsersResource,com.nonononoki.alovoa.html.DislikedUsersResource
+a3,com.nonononoki.alovoa.html,DislikedUsersResource,dislikedUsers,13,2,0,38,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.html,FaqResource,faq,4,1,0,10,0,,
+a3,com.nonononoki.alovoa.html,UserProfileResource,profileView,3,1,1,43,0,com.nonononoki.alovoa.html.UserProfileResource,com.nonononoki.alovoa.html.UserProfileResource
+a3,com.nonononoki.alovoa.html,UserProfileResource,profileViewModal,3,1,1,50,0,com.nonononoki.alovoa.html.UserProfileResource,com.nonononoki.alovoa.html.UserProfileResource
+a3,com.nonononoki.alovoa.html,UserProfileResource,data,32,6,2,57,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.html,DonateResource,donate,6,1,0,34,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.html,DeleteAccountResource,deleteAccount,14,2,1,43,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.html,TermsConditionsResource,termsConditions,4,1,0,21,0,,
+a3,com.nonononoki.alovoa.html,ProfileOnboardingResource,onboarding,20,3,0,35,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.html,TosResource,tosConditions,9,1,0,40,0,com.nonononoki.alovoa.service.PublicService,com.nonononoki.alovoa.service.PublicService
+a3,com.nonononoki.alovoa.html,DonateListResource,donateList,4,1,0,10,0,,
+a3,com.nonononoki.alovoa.html,IndexResource,index,13,3,0,25,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.html,BlockedUsersResource,blockedUsers,13,2,0,38,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.html,AdminResource,admin,13,2,0,42,0,com.nonononoki.alovoa.repo.ContactRepository,com.nonononoki.alovoa.repo.ContactRepository; com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.model.UserDto; com.nonononoki.alovoa.repo.UserReportRepository
+a3,com.nonononoki.alovoa.html,PasswordResource,passwordReset,6,1,0,37,0,com.nonononoki.alovoa.model.UserDto,com.nonononoki.alovoa.model.UserDto; com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.html,PasswordResource,passwordChange,7,1,1,47,0,com.nonononoki.alovoa.model.UserDto,com.nonononoki.alovoa.model.UserDto; com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.html,SearchResource,search,28,5,0,46,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.html,ErrorResource,error,3,1,0,10,0,,
+a3,com.nonononoki.alovoa.html,AdminVerificationResource,admin,12,2,0,40,0,com.nonononoki.alovoa.repo.UserVerificationPictureRepository,com.nonononoki.alovoa.repo.UserVerificationPictureRepository; com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.model.UserVerificationDto; com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.html,RegisterResource,register,10,2,0,33,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.html,RegisterResource,registerOauth,7,1,1,46,0,,
+a3,com.nonononoki.alovoa.html,RegisterResource,registerConfirm,9,1,1,54,0,com.nonononoki.alovoa.service.RegisterService,com.nonononoki.alovoa.service.RegisterService
+a3,com.nonononoki.alovoa.html,MessageResource,chats,17,3,0,52,0,com.nonononoki.alovoa.model.ConversationDto,com.nonononoki.alovoa.model.ConversationDto; com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.repo.ConversationRepository; com.nonononoki.alovoa.entity.user.Conversation; com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.html,MessageResource,chatsDetail,18,3,1,76,0,com.nonononoki.alovoa.entity.user.Conversation,com.nonononoki.alovoa.entity.user.Conversation; com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.html,LikedUsersResource,likedUsers,13,2,0,38,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.html,LoginResource,login,8,2,0,24,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.html,ProfileResource,profile,39,4,0,58,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.html.ProfileResource; com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.html,ProfileResource,warning,11,1,1,105,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.html.ProfileResource
+a3,com.nonononoki.alovoa.html,ProfileResource,getWarnings,29,6,1,121,0,,
+a3,com.nonononoki.alovoa.html,ImprintResource,imprint,5,1,0,14,0,,
+a3,com.nonononoki.alovoa.html,PrivacyResource,privacy,8,1,0,36,0,com.nonononoki.alovoa.service.PublicService,com.nonononoki.alovoa.service.PublicService
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,before,4,1,0,117,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,after,3,1,0,125,0,,
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,199,2,0,130,1,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.service.MessageService; com.nonononoki.alovoa.model.UserDto; com.nonononoki.alovoa.service.SearchService; com.nonononoki.alovoa.entity.User; com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,NotificationServiceTest,before,4,1,0,75,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.service,NotificationServiceTest,after,3,1,0,83,0,,
+a3,com.nonononoki.alovoa.service,NotificationServiceTest,test,19,2,0,88,1,com.nonononoki.alovoa.service.NotificationService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.repo.UserRepository; com.nonononoki.alovoa.service.NotificationService
+a3,com.nonononoki.alovoa.service,CaptchaServiceTest,test,5,1,0,25,1,com.nonononoki.alovoa.service.CaptchaService,com.nonononoki.alovoa.service.CaptchaService
+a3,com.nonononoki.alovoa.service,ScheduleServiceTest,before,4,1,0,90,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.service,ScheduleServiceTest,after,3,1,0,98,0,,
+a3,com.nonononoki.alovoa.service,ScheduleServiceTest,test,46,1,0,103,1,com.nonononoki.alovoa.service.ScheduleService,com.nonononoki.alovoa.service.ScheduleService
+a3,com.nonononoki.alovoa.service,ScheduleServiceTest,generateCaptcha,9,1,1,167,0,,
+a3,com.nonononoki.alovoa.service,RegisterServiceTest,test,12,1,0,96,1,,
+a3,com.nonononoki.alovoa.service,RegisterServiceTest,getTestUsers,40,2,4,115,0,com.nonononoki.alovoa.service.RegisterService,com.nonononoki.alovoa.service.RegisterService; com.nonononoki.alovoa.service.CaptchaService
+a3,com.nonononoki.alovoa.service,RegisterServiceTest,deleteAllUsers,21,4,5,170,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.service.CaptchaService
+a3,com.nonononoki.alovoa.service,RegisterServiceTest,createTestUserDto,16,2,4,193,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.service,MailServiceTest,before,3,1,0,62,0,,
+a3,com.nonononoki.alovoa.service,MailServiceTest,after,3,1,0,67,0,,
+a3,com.nonononoki.alovoa.service,MailServiceTest,test,20,1,0,72,1,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.service,PasswordServiceTest,before,4,1,0,79,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.service,PasswordServiceTest,after,3,1,0,87,0,,
+a3,com.nonononoki.alovoa.service,PasswordServiceTest,test,23,2,0,92,1,com.nonononoki.alovoa.service.PasswordService,com.nonononoki.alovoa.service.PasswordService; com.nonononoki.alovoa.service.CaptchaService; com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,AdminServiceTest,before,4,1,0,90,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.service,AdminServiceTest,after,3,1,0,98,0,,
+a3,com.nonononoki.alovoa.service,AdminServiceTest,test,28,1,0,103,1,com.nonononoki.alovoa.service.AdminService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.AdminService; com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.service,AdminServiceTest,contactTest,12,1,0,142,0,com.nonononoki.alovoa.service.ImprintService,com.nonononoki.alovoa.service.ImprintService; com.nonononoki.alovoa.service.CaptchaService
+a3,com.nonononoki.alovoa.service,AdminServiceTest,reportTest,10,1,2,156,0,com.nonononoki.alovoa.model.UserDto,com.nonononoki.alovoa.model.UserDto; com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserServiceTest,before,4,1,0,84,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.service,UserServiceTest,after,3,1,0,92,0,,
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,123,1,0,97,1,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.model.UserDto; com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.entity.User; com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,UserServiceTest,testGetInterestAutocomplete,47,1,0,255,1,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserServiceTest,testVerificationProcess,44,1,0,314,1,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.model.UserDto; com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.service,UserServiceTest,testGenerateVerificationCode,9,1,0,370,1,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserServiceTest,removeAllInterests,7,1,1,382,0,,
+a3,com.nonononoki.alovoa.service,UserServiceTest,deleteTest,11,1,1,389,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.service.CaptchaService
+a3,com.nonononoki.alovoa.service,DonateServiceTest,before,4,1,0,81,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.service,DonateServiceTest,after,3,1,0,89,0,,
+a3,com.nonononoki.alovoa.service,DonateServiceTest,test,23,1,0,94,1,com.nonononoki.alovoa.service.DonateService,com.nonononoki.alovoa.service.DonateService
+a3,com.nonononoki.alovoa.service,DonateServiceTest,testWithRealDataKofi,9,1,0,130,1,com.nonononoki.alovoa.service.DonateService,com.nonononoki.alovoa.service.DonateService
+a3,com.nonononoki.alovoa.service,RegisterService,register,33,7,1,112,0,com.nonononoki.alovoa.service.RegisterService,com.nonononoki.alovoa.service.RegisterService; com.nonononoki.alovoa.repo.UserRepository; com.nonononoki.alovoa.service.PublicService; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.service,RegisterService,registerOauth,35,6,1,156,0,com.nonononoki.alovoa.service.RegisterService,com.nonononoki.alovoa.service.RegisterService; com.nonononoki.alovoa.repo.UserRepository; com.nonononoki.alovoa.service.PublicService; com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.service.MailService; com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.service,RegisterService,createUserToken,7,1,1,201,0,com.nonononoki.alovoa.service.RegisterService,com.nonononoki.alovoa.service.RegisterService; com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.service,RegisterService,generateToken,7,1,1,209,0,,
+a3,com.nonononoki.alovoa.service,RegisterService,registerConfirm,34,6,1,217,0,com.nonononoki.alovoa.model.UserDto,com.nonononoki.alovoa.model.UserDto; com.nonononoki.alovoa.repo.UserRegisterTokenRepository; com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.service,RegisterService,registerBase,73,9,2,264,0,com.nonononoki.alovoa.service.PublicService,com.nonononoki.alovoa.service.PublicService; com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.entity.User
+a3,com.nonononoki.alovoa.service,RegisterService,isValidEmailAddress,13,2,1,355,0,,
+a3,com.nonononoki.alovoa.service,AdminService,hideContact,9,2,1,63,0,com.nonononoki.alovoa.service.AdminService,com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.service,AdminService,sendMailSingle,4,1,1,76,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService; com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.service,AdminService,sendMailAll,5,1,1,83,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService; com.nonononoki.alovoa.repo.UserRepository; com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.service,AdminService,deleteReport,15,2,1,91,0,com.nonononoki.alovoa.service.AdminService,com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.service,AdminService,removeImages,11,2,1,108,0,com.nonononoki.alovoa.model.UserDto,com.nonononoki.alovoa.model.UserDto; com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.service,AdminService,removeDescription,9,2,1,124,0,com.nonononoki.alovoa.model.UserDto,com.nonononoki.alovoa.model.UserDto; com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.service,AdminService,banUser,50,3,1,138,0,com.nonononoki.alovoa.entity.User,com.nonononoki.alovoa.entity.User; com.nonononoki.alovoa.model.UserDto; com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.repo.UserRepository; com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.service,AdminService,deleteAccount,17,4,1,199,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.repo.UserRepository; com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.service,AdminService,userExists,5,1,1,222,0,com.nonononoki.alovoa.repo.UserRepository,com.nonononoki.alovoa.repo.UserRepository; com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.service,AdminService,addDonation,17,2,2,228,0,com.nonononoki.alovoa.repo.UserRepository,com.nonononoki.alovoa.repo.UserRepository; com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.service,AdminService,verifyVerificationPicture,13,2,1,245,0,com.nonononoki.alovoa.service.AdminService,com.nonononoki.alovoa.service.AdminService; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,AdminService,deleteVerificationPicture,6,1,1,259,0,com.nonononoki.alovoa.service.AdminService,com.nonononoki.alovoa.service.AdminService; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,AdminService,checkRights,5,2,0,266,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,CaptchaService,generate,20,2,0,45,0,com.nonononoki.alovoa.service.CaptchaService,com.nonononoki.alovoa.service.CaptchaService; com.nonononoki.alovoa.lib.OxCaptcha; com.nonononoki.alovoa.repo.CaptchaRepository
+a3,com.nonononoki.alovoa.service,CaptchaService,generateCaptchaImage,11,1,0,68,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.service,CaptchaService,isValid,9,2,2,82,0,com.nonononoki.alovoa.service.CaptchaService,com.nonononoki.alovoa.service.CaptchaService
+a3,com.nonononoki.alovoa.service,CaptchaService,getIpHash,7,1,1,96,0,,
+a3,com.nonononoki.alovoa.service,UserService,removeUserDataCascading,130,26,2,125,0,com.nonononoki.alovoa.repo.UserVerificationPictureRepository,com.nonononoki.alovoa.repo.UserVerificationPictureRepository; com.nonononoki.alovoa.repo.UserBlockRepository; com.nonononoki.alovoa.repo.UserLikeRepository; com.nonononoki.alovoa.repo.UserHideRepository; com.nonononoki.alovoa.repo.ConversationRepository; com.nonononoki.alovoa.repo.UserNotificationRepository; com.nonononoki.alovoa.repo.UserReportRepository
+a3,com.nonononoki.alovoa.service,UserService,stripB64Type,6,2,1,274,0,,
+a3,com.nonononoki.alovoa.service,UserService,convertAudioMp3Wav,9,1,2,281,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,deleteAccountRequest,12,1,0,291,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.service,UserService,deleteAccountConfirm,31,6,1,307,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService; com.nonononoki.alovoa.service.CaptchaService; com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.service,UserService,updateProfilePicture,15,2,1,354,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,onboarding,25,2,1,370,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,updateDescription,20,5,1,401,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,UserService,updateIntention,17,3,1,421,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.service,UserService,updateMinAge,8,2,1,440,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.entity.User
+a3,com.nonononoki.alovoa.service,UserService,updateMaxAge,8,2,1,449,0,com.nonononoki.alovoa.entity.User,com.nonononoki.alovoa.entity.User; com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,UserService,updatePreferedGender,16,3,2,458,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,UserService,updateUserMiscInfo,22,5,2,475,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.repo.UserMiscInfoRepository
+a3,com.nonononoki.alovoa.service,UserService,addInterest,22,5,1,501,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,UserService,deleteInterest,9,2,1,532,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,UserService,getInterestAutocomplete,11,2,1,546,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.repo.UserInterestRepository
+a3,com.nonononoki.alovoa.service,UserService,updateAccentColor,5,1,1,559,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,UserService,updateUiDesign,5,1,1,565,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,UserService,updateShowZodiac,5,1,1,571,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,UserService,updateUnits,5,1,1,577,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,UserService,addImage,14,2,1,583,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,deleteImage,8,2,1,598,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,UserService,adjustPicture,48,5,1,607,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,likeUser,50,7,1,671,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.NotificationService; com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.repo.UserLikeRepository
+a3,com.nonononoki.alovoa.service,UserService,hideUser,12,2,1,736,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.repo.UserHideRepository; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,blockUser,12,2,1,751,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.repo.UserBlockRepository; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,unblockUser,9,2,1,766,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.repo.UserBlockRepository; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,reportUser,15,2,2,779,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.repo.UserReportRepository; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,encodedIdToUser,4,1,1,800,0,com.nonononoki.alovoa.model.UserDto,com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.service,UserService,hasNewAlert,3,1,0,807,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,hasNewAlert,10,2,1,811,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,UserService,hasNewMessage,9,2,0,823,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,UserService,updateUserInfo,3,1,1,833,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,updateUserInfo,16,4,2,837,0,,
+a3,com.nonononoki.alovoa.service,UserService,getUserdata,16,2,1,853,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.model.UserGdpr; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,deleteProfilePicture,6,1,0,878,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,UserService,getAudio,7,2,1,885,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,deleteAudio,5,1,0,895,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,UserService,updateAudio,14,2,2,901,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,updateCountry,11,2,1,918,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,UserService,getVerificationCode,4,1,0,931,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,UserService,getVerificationCode,11,2,1,936,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.service,UserService,updateVerificationPicture,16,2,1,947,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,upvoteVerificationPicture,15,4,1,967,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,downvoteVerificationPicture,15,4,1,987,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,adjustAudio,12,3,2,1007,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,UserService,trimAudioWav,43,5,2,1019,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,DonateService,filter,27,5,1,63,0,com.nonononoki.alovoa.model.DonationDto,com.nonononoki.alovoa.model.DonationDto; com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.repo.UserRepository; com.nonononoki.alovoa.repo.UserDonationRepository; com.nonononoki.alovoa.entity.User
+a3,com.nonononoki.alovoa.service,DonateService,donationReceivedKofi,40,7,2,102,0,com.nonononoki.alovoa.repo.UserRepository,com.nonononoki.alovoa.repo.UserRepository; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.service,DonateService,donationReceivedBmac,40,7,2,153,0,com.nonononoki.alovoa.repo.UserRepository,com.nonononoki.alovoa.repo.UserRepository; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.service,MailService,sendMail,16,1,4,47,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.service,MailService,sendAdminMail,3,1,3,63,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.service,MailService,sendAdminMailAll,11,4,3,67,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.service,MailService,sendMailWithAttachment,10,1,6,79,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService
+a3,com.nonononoki.alovoa.service,MailService,getEmailText,12,1,1,91,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.service,MailService,sendRegistrationMail,6,1,1,105,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.service,MailService,sendPasswordResetMail,6,1,1,115,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.service,MailService,sendAccountDeleteRequest,6,1,1,124,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.service,MailService,sendAccountDeleteConfirm,6,1,1,134,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.service,MailService,sendAccountConfirmed,6,1,1,143,0,com.nonononoki.alovoa.service.MailService,com.nonononoki.alovoa.service.MailService; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.service,ScheduleService,scheduleShort,7,2,0,52,0,com.nonononoki.alovoa.service.ScheduleService,com.nonononoki.alovoa.service.ScheduleService
+a3,com.nonononoki.alovoa.service,ScheduleService,scheduleLong,6,2,0,61,0,com.nonononoki.alovoa.service.ScheduleService,com.nonononoki.alovoa.service.ScheduleService
+a3,com.nonononoki.alovoa.service,ScheduleService,cleanCaptcha,7,1,1,69,0,com.nonononoki.alovoa.repo.CaptchaRepository,com.nonononoki.alovoa.repo.CaptchaRepository
+a3,com.nonononoki.alovoa.service,ScheduleService,cleanContact,7,1,1,77,0,com.nonononoki.alovoa.repo.ContactRepository,com.nonononoki.alovoa.repo.ContactRepository
+a3,com.nonononoki.alovoa.service,ScheduleService,cleanUserHide,22,3,1,85,0,com.nonononoki.alovoa.repo.UserHideRepository,com.nonononoki.alovoa.repo.UserHideRepository
+a3,com.nonononoki.alovoa.service,PasswordService,resetPasword,32,7,1,53,0,com.nonononoki.alovoa.service.CaptchaService,com.nonononoki.alovoa.service.CaptchaService; com.nonononoki.alovoa.service.MailService; com.nonononoki.alovoa.repo.UserRepository; com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,PasswordService,changePasword,25,6,1,96,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.repo.UserPasswordTokenRepository
+a3,com.nonononoki.alovoa.service,ImprintService,contact,11,2,1,27,0,com.nonononoki.alovoa.service.CaptchaService,com.nonononoki.alovoa.service.CaptchaService; com.nonononoki.alovoa.service.PublicService
+a3,com.nonononoki.alovoa.service,AuthService,getCurrentUser,27,6,1,26,0,com.nonononoki.alovoa.repo.UserRepository,com.nonononoki.alovoa.repo.UserRepository; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.service,AuthService,getCurrentUser,3,1,0,52,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,AuthService,getOauth2Email,9,2,0,56,0,,
+a3,com.nonononoki.alovoa.service,NotificationService,pushService,8,2,0,61,0,,
+a3,com.nonononoki.alovoa.service,NotificationService,subscribe,14,3,1,71,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,NotificationService,newLike,12,1,1,87,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.service.NotificationService
+a3,com.nonononoki.alovoa.service,NotificationService,newMatch,12,1,1,102,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.service.NotificationService
+a3,com.nonononoki.alovoa.service,NotificationService,newMessage,12,1,1,117,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.service.NotificationService
+a3,com.nonononoki.alovoa.service,NotificationService,send,7,2,2,132,0,com.nonononoki.alovoa.service.NotificationService,com.nonononoki.alovoa.service.NotificationService
+a3,com.nonononoki.alovoa.service,SearchService,getGeocoder,6,2,0,70,0,,
+a3,com.nonononoki.alovoa.service,SearchService,searchDefault,12,3,0,77,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.repo.UserRepository; com.nonononoki.alovoa.service.SearchService
+a3,com.nonononoki.alovoa.service,SearchService,search,0,19,4,92,0,com.nonononoki.alovoa.repo.UserRepository,com.nonononoki.alovoa.repo.UserRepository; com.nonononoki.alovoa.service.SearchService; com.nonononoki.alovoa.entity.User; com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.service.PublicService; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.service,SearchService,filterUsers,16,5,4,284,0,,
+a3,com.nonononoki.alovoa.service,SearchService,searchResultstoUserDto,15,4,3,303,0,com.nonononoki.alovoa.model.UserDto,com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.service,SearchService,getCountryIsoByLocation,9,2,2,326,0,com.nonononoki.alovoa.service.SearchService,com.nonononoki.alovoa.service.SearchService
+a3,com.nonononoki.alovoa.service,MessageService,send,39,8,2,40,0,com.nonononoki.alovoa.entity.user.Conversation,com.nonononoki.alovoa.entity.user.Conversation; com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.NotificationService; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.service,MessageService,updateCheckedDate,21,2,1,94,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.service,PublicService,text,4,1,1,16,0,,
+a3,com.nonononoki.alovoa.config,WebMvcConfig,addCorsMappings,3,1,1,22,0,,
+a3,com.nonononoki.alovoa.config,WebMvcConfig,addResourceHandlers,3,1,1,27,0,,
+a3,com.nonononoki.alovoa.config,WebMvcConfig,addInterceptors,5,1,1,32,0,,
+a3,com.nonononoki.alovoa.config,WebMvcConfig,localeResolver,3,1,0,39,0,,
+a3,com.nonononoki.alovoa.config,WebMvcConfig,messageSource,6,1,0,44,0,,
+a3,com.nonononoki.alovoa.config,SecurityConfig,getRoleUser,3,1,0,71,0,,
+a3,com.nonononoki.alovoa.config,SecurityConfig,getRoleAdmin,3,1,0,75,0,,
+a3,com.nonononoki.alovoa.config,SecurityConfig,filterChain,12,2,1,79,0,com.nonononoki.alovoa.config.SecurityConfig,com.nonononoki.alovoa.config.SecurityConfig
+a3,com.nonononoki.alovoa.config,SecurityConfig,authenticationManager,3,1,0,118,0,,
+a3,com.nonononoki.alovoa.config,SecurityConfig,successHandler,3,1,0,123,0,,
+a3,com.nonononoki.alovoa.config,SecurityConfig,authenticationFilter,9,1,0,128,0,com.nonononoki.alovoa.config.SecurityConfig,com.nonononoki.alovoa.config.SecurityConfig
+a3,com.nonononoki.alovoa.config,SecurityConfig,sessionAuthenticationStrategy,9,1,0,140,0,com.nonononoki.alovoa.config.SecurityConfig,com.nonononoki.alovoa.config.SecurityConfig
+a3,com.nonononoki.alovoa.config,SecurityConfig,getSessionInformationExpiredStrategy,4,1,0,150,0,,
+a3,com.nonononoki.alovoa.config,SecurityConfig,sessionRegistry,3,1,0,155,0,,
+a3,com.nonononoki.alovoa.config,SecurityConfig,rememberMeServices,3,1,0,160,0,,
+a3,com.nonononoki.alovoa.config,SecurityConfig,oAuthRememberMeServices,5,1,0,165,0,,
+a3,com.nonononoki.alovoa.config,SecurityConfig,passwordEncoder,3,1,0,173,0,,
+a3,com.nonononoki.alovoa.config,SecurityConfig,authProvider,3,1,0,178,0,,
+a3,com.nonononoki.alovoa.config,SecurityConfig,corsFilter,10,1,0,183,0,,
+a3,com.nonononoki.alovoa.config,SecurityConfig,getOAuthRememberMeServices,3,1,0,195,0,com.nonononoki.alovoa.config.SecurityConfig,com.nonononoki.alovoa.config.SecurityConfig
+a3,com.nonononoki.alovoa.config,EventListenerConfig,handleContextRefresh,6,1,1,77,0,com.nonononoki.alovoa.config.EventListenerConfig,com.nonononoki.alovoa.config.EventListenerConfig
+a3,com.nonononoki.alovoa.config,EventListenerConfig,setDefaultUserMiscInfo,25,2,0,85,0,,
+a3,com.nonononoki.alovoa.config,EventListenerConfig,setDefaultAdmin,9,2,0,155,0,,
+a3,com.nonononoki.alovoa.config,EventListenerConfig,setDefaultGenders,13,2,0,165,0,,
+a3,com.nonononoki.alovoa.config,EventListenerConfig,setDefaulIntentions,13,2,0,183,0,,
+a3,com.nonononoki.alovoa.config,EventListenerConfig,removeInvalidUsers,16,3,0,199,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.repo.UserRepository
+a3,com.nonononoki.alovoa.entity,User,User,3,1,0,179,0,,
+a3,com.nonononoki.alovoa.entity,User,User,3,1,1,184,0,,
+a3,com.nonononoki.alovoa.entity,User,getAuthorities,12,2,0,188,0,com.nonononoki.alovoa.config.SecurityConfig,com.nonononoki.alovoa.config.SecurityConfig
+a3,com.nonononoki.alovoa.entity,User,getUsername,3,1,0,202,0,,
+a3,com.nonononoki.alovoa.entity,User,isAccountNonExpired,3,1,0,207,0,,
+a3,com.nonononoki.alovoa.entity,User,isAccountNonLocked,3,1,0,212,0,,
+a3,com.nonononoki.alovoa.entity,User,isCredentialsNonExpired,3,1,0,217,0,,
+a3,com.nonononoki.alovoa.entity,User,isEnabled,3,1,0,222,0,,
+a3,com.nonononoki.alovoa.entity,User,getPreferedMinAge,8,1,0,227,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.entity,User,setPreferedMinAge,7,1,1,235,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.entity,User,getPreferedMaxAge,8,1,0,242,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.entity,User,setPreferedMaxAge,7,1,1,250,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.entity,User,setPreferedMinAge,3,1,2,257,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.entity,User,setPreferedMaxAge,3,1,2,261,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.entity,User,writeObject,3,1,1,265,0,,
+a3,com.nonononoki.alovoa.entity,User,readObject,3,1,1,270,0,,
+a3,com.nonononoki.alovoa.entity.user,UserInterest,equals,10,3,1,31,0,,
+a3,com.nonononoki.alovoa.entity.user,UserInterest,hashCode,3,1,0,46,0,,
+a3,com.nonononoki.alovoa.entity.user,Conversation,containsUser,3,1,1,45,0,,
+a3,com.nonononoki.alovoa.entity.user,Conversation,getPartner,5,1,1,49,0,,
+a3,com.nonononoki.alovoa.entity.user,Conversation,isBlocked,5,1,1,55,0,com.nonononoki.alovoa.repo.UserBlockRepository,com.nonononoki.alovoa.repo.UserBlockRepository
+a3,com.nonononoki.alovoa.component,RestExceptionHandler,handleConflict,11,2,2,28,0,,
+a3,com.nonononoki.alovoa.component,SuccessHandler,SuccessHandler,4,1,1,38,0,,
+a3,com.nonononoki.alovoa.component,SuccessHandler,onAuthenticationSuccess,22,3,3,43,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.service.AuthService
+a3,com.nonononoki.alovoa.component,AuthProvider,authenticate,41,9,1,44,0,com.nonononoki.alovoa.repo.UserRepository,com.nonononoki.alovoa.repo.UserRepository; com.nonononoki.alovoa.config.SecurityConfig; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.component,AuthProvider,supports,3,1,1,96,0,,
+a3,com.nonononoki.alovoa.component,CustomTokenBasedRememberMeServices,CustomTokenBasedRememberMeServices,3,1,2,22,0,,
+a3,com.nonononoki.alovoa.component,CustomTokenBasedRememberMeServices,retrieveUserName,6,2,1,26,0,com.nonononoki.alovoa.component.CustomTokenBasedRememberMeServices,com.nonononoki.alovoa.component.CustomTokenBasedRememberMeServices
+a3,com.nonononoki.alovoa.component,CustomTokenBasedRememberMeServices,onLoginSuccess,25,4,3,35,0,com.nonononoki.alovoa.component.CustomTokenBasedRememberMeServices,com.nonononoki.alovoa.component.CustomTokenBasedRememberMeServices
+a3,com.nonononoki.alovoa.component,CustomTokenBasedRememberMeServices,getRememberMeCookie,8,1,3,69,0,com.nonononoki.alovoa.component.CustomTokenBasedRememberMeServices,com.nonononoki.alovoa.component.CustomTokenBasedRememberMeServices
+a3,com.nonononoki.alovoa.component,CustomTokenBasedRememberMeServices,getCookiePath,4,1,1,79,0,,
+a3,com.nonononoki.alovoa.component,CustomTokenBasedRememberMeServices,isInstanceOfUserDetails,3,1,1,85,0,,
+a3,com.nonononoki.alovoa.component,CustomTokenBasedRememberMeServices,getRememberMeCookieData,7,1,2,90,0,,
+a3,com.nonononoki.alovoa.component,CustomTokenBasedRememberMeServices,getRememberMeCookieData,3,1,1,99,0,com.nonononoki.alovoa.component.CustomTokenBasedRememberMeServices,com.nonononoki.alovoa.component.CustomTokenBasedRememberMeServices
+a3,com.nonononoki.alovoa.component,TextEncryptorConverter,getIvSpec,6,2,0,39,0,,
+a3,com.nonononoki.alovoa.component,TextEncryptorConverter,getKeySpec,6,2,0,46,0,,
+a3,com.nonononoki.alovoa.component,TextEncryptorConverter,getEnCipher,7,2,0,53,0,com.nonononoki.alovoa.component.TextEncryptorConverter,com.nonononoki.alovoa.component.TextEncryptorConverter
+a3,com.nonononoki.alovoa.component,TextEncryptorConverter,getDeCipher,7,2,0,62,0,com.nonononoki.alovoa.component.TextEncryptorConverter,com.nonononoki.alovoa.component.TextEncryptorConverter
+a3,com.nonononoki.alovoa.component,TextEncryptorConverter,encode,4,1,1,71,0,com.nonononoki.alovoa.component.TextEncryptorConverter,com.nonononoki.alovoa.component.TextEncryptorConverter
+a3,com.nonononoki.alovoa.component,TextEncryptorConverter,decode,4,1,1,78,0,com.nonononoki.alovoa.component.TextEncryptorConverter,com.nonononoki.alovoa.component.TextEncryptorConverter
+a3,com.nonononoki.alovoa.component,TextEncryptorConverter,convertToDatabaseColumn,8,1,1,85,0,com.nonononoki.alovoa.component.TextEncryptorConverter,com.nonononoki.alovoa.component.TextEncryptorConverter
+a3,com.nonononoki.alovoa.component,TextEncryptorConverter,convertToEntityAttribute,8,1,1,94,0,com.nonononoki.alovoa.component.TextEncryptorConverter,com.nonononoki.alovoa.component.TextEncryptorConverter
+a3,com.nonononoki.alovoa.component,AuthFilter,attemptAuthentication,10,1,2,21,0,,
+a3,com.nonononoki.alovoa.component,FailureHandler,onAuthenticationFailure,4,1,3,20,0,,
+a3,com.nonononoki.alovoa.component,CustomUserDetailsService,loadUserByUsername,7,2,1,18,0,com.nonononoki.alovoa.repo.UserRepository,com.nonononoki.alovoa.repo.UserRepository
+a3,com.nonononoki.alovoa.model,ConversationDto,conversationToDto,16,3,3,30,0,com.nonononoki.alovoa.entity.user.Conversation,com.nonononoki.alovoa.entity.user.Conversation; com.nonononoki.alovoa.model.UserDto; com.nonononoki.alovoa.model.MessageDto
+a3,com.nonononoki.alovoa.model,UserInterestDto,UserInterestDto,4,1,2,8,0,,
+a3,com.nonononoki.alovoa.model,NotificationDto,notificationToNotificationDto,7,1,4,27,0,com.nonononoki.alovoa.model.UserDto,com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.model,AuthToken,AuthToken,7,1,2,18,0,,
+a3,com.nonononoki.alovoa.model,AuthToken,AuthToken,7,1,4,26,0,,
+a3,com.nonononoki.alovoa.model,AlovoaException,AlovoaException,3,1,1,8,0,,
+a3,com.nonononoki.alovoa.model,UserGdpr,userToUserGdpr,39,4,1,45,0,com.nonononoki.alovoa.entity.User,com.nonononoki.alovoa.entity.User
+a3,com.nonononoki.alovoa.model,UserVerificationDto,map,8,1,3,23,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.model,MessageDto,messageToDto,9,1,2,20,0,,
+a3,com.nonononoki.alovoa.model,MessageDto,messagesToDtos,7,2,2,30,0,com.nonononoki.alovoa.model.MessageDto,com.nonononoki.alovoa.model.MessageDto
+a3,com.nonononoki.alovoa.model,WebPushDto,toEntity,10,1,1,25,0,,
+a3,com.nonononoki.alovoa.model,DonationDto,donationToDto,8,1,4,28,0,com.nonononoki.alovoa.model.UserDto,com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.model,DonationDto,donationToDto,8,1,5,39,0,com.nonononoki.alovoa.model.UserDto,com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.model,DonationDto,userToDto,7,1,4,51,0,com.nonononoki.alovoa.model.UserDto,com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.model,DonationDto,userToDto,7,1,5,61,0,com.nonononoki.alovoa.model.UserDto,com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.model,DonationDto,donationsToDtos,12,4,5,71,0,com.nonononoki.alovoa.model.DonationDto,com.nonononoki.alovoa.model.DonationDto
+a3,com.nonononoki.alovoa.model,DonationDto,usersToDtos,12,4,5,88,0,com.nonononoki.alovoa.model.DonationDto,com.nonononoki.alovoa.model.DonationDto
+a3,com.nonononoki.alovoa.model,UserDto,userToUserDto,3,1,4,80,0,com.nonononoki.alovoa.model.UserDto,com.nonononoki.alovoa.model.UserDto
+a3,com.nonononoki.alovoa.model,UserDto,userToUserDto,101,23,5,86,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.model.UserDto; com.nonononoki.alovoa.entity.User
+a3,com.nonononoki.alovoa.model,UserDto,encodeId,3,1,2,198,0,com.nonononoki.alovoa.component.TextEncryptorConverter,com.nonononoki.alovoa.component.TextEncryptorConverter
+a3,com.nonononoki.alovoa.model,UserDto,decodeIdThrowing,4,1,2,205,0,com.nonononoki.alovoa.component.TextEncryptorConverter,com.nonononoki.alovoa.component.TextEncryptorConverter
+a3,com.nonononoki.alovoa.model,UserDto,decodeId,10,1,2,212,0,com.nonononoki.alovoa.component.TextEncryptorConverter,com.nonononoki.alovoa.component.TextEncryptorConverter
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,19,13,1,222,0,,
+a3,com.nonononoki.alovoa.model,UserDto,isVerifiedByUsers,6,2,1,255,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,OxCaptcha,15,1,2,51,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,setCharSet,3,1,1,70,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,setFont,3,1,1,75,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,setFont,5,1,3,79,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,setHollow,3,1,0,85,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,background,3,1,0,89,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,background,5,1,1,93,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,foreground,3,1,1,99,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,3,1,0,103,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,3,1,1,107,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,genText,7,2,1,111,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,3,1,1,119,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,3,1,2,123,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,3,1,1,127,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,6,1,4,131,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,3,1,4,138,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,10,2,5,142,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,7,2,5,153,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,10,2,5,161,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,textRelative,7,2,3,172,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,textCentered,10,2,2,180,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,textCentered,10,2,3,191,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,textRelative,23,2,4,210,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,textAbsolute,14,2,4,245,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,textCentered,35,4,3,263,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,renderString,4,1,3,301,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,renderChar,14,2,3,306,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blur,3,1,0,321,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blur,11,2,1,325,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gbConvolve,26,5,3,339,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian,3,1,1,367,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian,11,2,2,371,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian3x3,8,1,0,384,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,8,1,0,396,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s2,8,1,0,411,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,3,1,0,425,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,3,1,1,429,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,3,1,2,433,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,3,1,3,437,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,25,6,4,441,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStrokes,3,1,0,481,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStrokes,10,2,2,485,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseEllipses,8,2,2,497,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStraightLine,3,1,0,507,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStraightLine,28,1,2,511,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseSaltPepper,3,1,0,551,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseSaltPepper,17,3,2,555,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseWhiteGaussian,3,1,0,577,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseWhiteGaussian,10,3,1,581,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseWhiteUniform,10,3,0,592,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortion,3,1,0,603,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionFishEye,27,6,0,607,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionStretch,5,1,0,669,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionStretch,5,1,2,675,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric,3,1,0,681,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric,16,3,3,685,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric2,3,1,0,702,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric2,39,6,1,706,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear2,9,1,0,754,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear2,40,5,6,764,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear,7,1,0,803,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear,4,1,4,812,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,3,1,0,817,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,3,1,1,821,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,45,8,3,825,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,normalize,23,7,0,879,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,recenter,38,9,0,903,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,load,12,3,1,944,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,save,11,3,4,957,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,save,11,3,2,969,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,getText,3,1,0,981,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,getImage,3,1,0,985,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,getImageArray2D,11,3,0,989,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,getImageArray1D,12,3,0,1001,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,save,3,1,1,1015,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,ranInt,4,1,2,1019,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,fishEyeFormula,9,3,1,1024,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,shearX,15,3,5,1044,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,shearY,15,3,5,1061,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,singlePixelConvolution,9,3,6,1077,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,convolution2D,16,5,6,1088,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,convolution2DPadded,20,5,6,1108,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gaussianDiscrete2D,10,3,3,1132,0,,
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gaussian2D,15,5,2,1144,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gaussian,9,1,3,1163,0,com.nonononoki.alovoa.lib.OxCaptcha,com.nonononoki.alovoa.lib.OxCaptcha
+a3,com.nonononoki.alovoa.repo,GenderRepository,findByText,0,1,1,8,0,,
+a3,com.nonononoki.alovoa.repo,ConversationRepository,findByUsers_Id,0,1,1,10,0,,
+a3,com.nonononoki.alovoa.repo,UserInterestRepository,getInterestAutocomplete,0,1,3,15,0,,
+a3,com.nonononoki.alovoa.repo,UserReportRepository,findByUserFromAndUserTo,0,1,2,11,0,,
+a3,com.nonononoki.alovoa.repo,UserReportRepository,findByUserFrom,0,1,1,12,0,,
+a3,com.nonononoki.alovoa.repo,UserReportRepository,findByUserTo,0,1,1,13,0,,
+a3,com.nonononoki.alovoa.repo,UserReportRepository,findTop20ByOrderByDateAsc,0,1,0,14,0,,
+a3,com.nonononoki.alovoa.repo,UserVerificationPictureRepository,findTop20ByVerifiedByAdminFalseOrderByDateAsc,0,1,0,10,0,,
+a3,com.nonononoki.alovoa.repo,UserVerificationPictureRepository,findByUserNo,0,1,1,12,0,,
+a3,com.nonononoki.alovoa.repo,UserVerificationPictureRepository,findByUserYes,0,1,1,14,0,,
+a3,com.nonononoki.alovoa.repo,UserMiscInfoRepository,findByValue,0,1,1,8,0,,
+a3,com.nonononoki.alovoa.repo,MessageRepository,findByUserFrom,0,1,1,11,0,,
+a3,com.nonononoki.alovoa.repo,MessageRepository,findByUserTo,0,1,1,12,0,,
+a3,com.nonononoki.alovoa.repo,UserDonationRepository,findTop20ByUserDatesDateOfBirthGreaterThanEqualAndUserDatesDateOfBirthLessThanEqualOrderByDateDesc,0,1,2,11,0,,
+a3,com.nonononoki.alovoa.repo,UserBlockRepository,findByUserFromAndUserTo,0,1,2,11,0,,
+a3,com.nonononoki.alovoa.repo,UserBlockRepository,findByUserFrom,0,1,1,12,0,,
+a3,com.nonononoki.alovoa.repo,UserBlockRepository,findByUserTo,0,1,1,13,0,,
+a3,com.nonononoki.alovoa.repo,ConversationCheckedDateRepository,findByUserId,0,1,1,11,0,,
+a3,com.nonononoki.alovoa.repo,ConversationCheckedDateRepository,findByConversationAndUserId,0,1,2,12,0,,
+a3,com.nonononoki.alovoa.repo,UserRegisterTokenRepository,findByContent,0,1,1,11,0,,
+a3,com.nonononoki.alovoa.repo,UserRegisterTokenRepository,findByDateBefore,0,1,1,12,0,,
+a3,com.nonononoki.alovoa.repo,ContactRepository,findTop20ByHiddenFalse,0,1,0,11,0,,
+a3,com.nonononoki.alovoa.repo,ContactRepository,deleteByDateBefore,0,1,1,13,0,,
+a3,com.nonononoki.alovoa.repo,UserNotificationRepository,findByUserFromAndUserTo,0,1,2,11,0,,
+a3,com.nonononoki.alovoa.repo,UserNotificationRepository,findByUserFrom,0,1,1,12,0,,
+a3,com.nonononoki.alovoa.repo,UserNotificationRepository,findByUserTo,0,1,1,13,0,,
+a3,com.nonononoki.alovoa.repo,UserDeleteTokenRepository,findTop100ByDateAfter,0,1,1,11,0,,
+a3,com.nonononoki.alovoa.repo,CaptchaRepository,deleteByDateBefore,0,1,1,11,0,,
+a3,com.nonononoki.alovoa.repo,CaptchaRepository,findByHashCode,0,1,1,13,0,,
+a3,com.nonononoki.alovoa.repo,UserRepository,findByEmail,0,1,1,18,0,,
+a3,com.nonononoki.alovoa.repo,UserRepository,countByConfirmed,0,1,1,20,0,,
+a3,com.nonononoki.alovoa.repo,UserRepository,countByConfirmedAndGenderId,0,1,2,22,0,,
+a3,com.nonononoki.alovoa.repo,UserRepository,usersSearch,3,1,2,24,0,com.nonononoki.alovoa.repo.UserRepository,com.nonononoki.alovoa.repo.UserRepository
+a3,com.nonononoki.alovoa.repo,UserRepository,usersSearchQuery,0,1,13,30,0,,
+a3,com.nonononoki.alovoa.repo,UserRepository,usersSearchAllIgnoreLocation,3,1,2,43,0,com.nonononoki.alovoa.repo.UserRepository,com.nonononoki.alovoa.repo.UserRepository
+a3,com.nonononoki.alovoa.repo,UserRepository,usersSearchIgnoreLocation,0,1,9,50,0,,
+a3,com.nonononoki.alovoa.repo,UserRepository,usersSearchAllIgnoreLocationAndIntention,3,1,2,60,0,com.nonononoki.alovoa.repo.UserRepository,com.nonononoki.alovoa.repo.UserRepository
+a3,com.nonononoki.alovoa.repo,UserRepository,usersSearchAllIgnoreAll,3,1,2,67,0,com.nonononoki.alovoa.repo.UserRepository,com.nonononoki.alovoa.repo.UserRepository
+a3,com.nonononoki.alovoa.repo,UserRepository,usersDonate,3,1,2,73,0,com.nonononoki.alovoa.repo.UserRepository,com.nonononoki.alovoa.repo.UserRepository
+a3,com.nonononoki.alovoa.repo,UserRepository,adminSearch,3,1,0,78,0,com.nonononoki.alovoa.repo.UserRepository,com.nonononoki.alovoa.repo.UserRepository
+a3,com.nonononoki.alovoa.repo,UserRepository,findByDisabledFalseAndAdminFalseAndConfirmedTrue,0,1,0,83,0,,
+a3,com.nonononoki.alovoa.repo,UserRepository,findTop100ByDisabledFalseAndAdminFalseAndConfirmedTrueAndIntentionNotNullAndLocationLatitudeNotNullAndProfilePictureNotNullOrderByDatesCreationDateDesc,0,1,0,85,0,,
+a3,com.nonononoki.alovoa.repo,UserRepository,findTop200ByDisabledFalseAndAdminFalseAndConfirmedTrueAndIntentionNotNullAndLocationLatitudeNotNullAndProfilePictureNotNullAndDatesDateOfBirthGreaterThanEqualAndDatesDateOfBirthLessThanEqualAndIdNotInAndIdNotInAndIdNotInAndGenderIdIn,0,1,7,87,0,,
+a3,com.nonononoki.alovoa.repo,UserRepository,findTop50ByDisabledFalseAndAdminFalseAndConfirmedTrueAndIntentionNotNullAndLocationLatitudeNotNullAndProfilePictureNotNullAndDatesDateOfBirthGreaterThanEqualAndDatesDateOfBirthLessThanEqualAndIdNotInAndIdNotInAndIdNotIn,0,1,6,91,0,,
+a3,com.nonononoki.alovoa.repo,UserRepository,findTop20ByDisabledFalseAndAdminFalseAndConfirmedTrueAndIntentionNotNullAndLocationLatitudeNotNullAndProfilePictureNotNullAndDatesDateOfBirthGreaterThanEqualAndDatesDateOfBirthLessThanEqualOrderByTotalDonationsDesc,0,1,2,96,0,,
+a3,com.nonononoki.alovoa.repo,UserLikeRepository,findByUserFromAndUserTo,0,1,2,11,0,,
+a3,com.nonononoki.alovoa.repo,UserLikeRepository,findByUserTo,0,1,1,12,0,,
+a3,com.nonononoki.alovoa.repo,UserLikeRepository,findByUserFrom,0,1,1,13,0,,
+a3,com.nonononoki.alovoa.repo,UserPasswordTokenRepository,findByContent,0,1,1,11,0,,
+a3,com.nonononoki.alovoa.repo,UserPasswordTokenRepository,findTop100ByDateBefore,0,1,1,12,0,,
+a3,com.nonononoki.alovoa.repo,UserHideRepository,findByUserFromAndUserTo,0,1,2,15,0,,
+a3,com.nonononoki.alovoa.repo,UserHideRepository,findByUserFrom,0,1,1,16,0,,
+a3,com.nonononoki.alovoa.repo,UserHideRepository,findByUserTo,0,1,1,17,0,,
+a3,com.nonononoki.alovoa.repo,UserHideRepository,findByByDateBefore,0,1,2,19,0,,
+a3,com.nonononoki.alovoa.repo,UserIntentionRepository,findByText,0,1,1,8,0,,
+a3,com.nonononoki.alovoa.rest,RegisterController,register,3,1,1,30,0,com.nonononoki.alovoa.service.RegisterService,com.nonononoki.alovoa.service.RegisterService
+a3,com.nonononoki.alovoa.rest,RegisterController,registerOauth,4,1,1,36,0,com.nonononoki.alovoa.service.RegisterService,com.nonononoki.alovoa.service.RegisterService
+a3,com.nonononoki.alovoa.rest,PasswordController,resetPasword,3,1,1,26,0,com.nonononoki.alovoa.service.PasswordService,com.nonononoki.alovoa.service.PasswordService
+a3,com.nonononoki.alovoa.rest,PasswordController,changePasword,3,1,1,32,0,com.nonononoki.alovoa.service.PasswordService,com.nonononoki.alovoa.service.PasswordService
+a3,com.nonononoki.alovoa.rest,AdminController,deleteReport,3,1,1,27,0,com.nonononoki.alovoa.service.AdminService,com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.rest,AdminController,banUser,3,1,1,32,0,com.nonononoki.alovoa.service.AdminService,com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.rest,AdminController,removeImages,3,1,1,39,0,com.nonononoki.alovoa.service.AdminService,com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.rest,AdminController,removeDescription,3,1,1,46,0,com.nonononoki.alovoa.service.AdminService,com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.rest,AdminController,hideContact,3,1,1,53,0,com.nonononoki.alovoa.service.AdminService,com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.rest,AdminController,sendMailSingle,3,1,1,58,0,com.nonononoki.alovoa.service.AdminService,com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.rest,AdminController,sendMailAll,3,1,1,63,0,com.nonononoki.alovoa.service.AdminService,com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.rest,AdminController,deleteAccount,3,1,1,68,0,com.nonononoki.alovoa.service.AdminService,com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.rest,AdminController,userExists,3,1,1,73,0,com.nonononoki.alovoa.service.AdminService,com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.rest,AdminController,addDonation,3,1,2,78,0,com.nonononoki.alovoa.service.AdminService,com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.rest,AdminController,userVerificationVerify,3,1,1,84,0,com.nonononoki.alovoa.service.AdminService,com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.rest,AdminController,userVerificationDelete,3,1,1,91,0,com.nonononoki.alovoa.service.AdminService,com.nonononoki.alovoa.service.AdminService
+a3,com.nonononoki.alovoa.rest,NotificationController,subscribe,3,1,1,21,0,com.nonononoki.alovoa.service.NotificationService,com.nonononoki.alovoa.service.NotificationService; com.nonononoki.alovoa.model.WebPushDto
+a3,com.nonononoki.alovoa.rest,Oauth2Controller,oauth2Google,4,1,1,89,0,,
+a3,com.nonononoki.alovoa.rest,Oauth2Controller,oauth2Facebook,4,1,1,95,0,,
+a3,com.nonononoki.alovoa.rest,Oauth2Controller,oauth2Success,74,13,0,101,0,com.nonononoki.alovoa.rest.Oauth2Controller,com.nonononoki.alovoa.rest.Oauth2Controller; com.nonononoki.alovoa.html.RegisterResource; com.nonononoki.alovoa.repo.UserRepository; com.nonononoki.alovoa.service.PublicService
+a3,com.nonononoki.alovoa.rest,Oauth2Controller,getRememberMeCookie,10,1,2,198,0,com.nonononoki.alovoa.config.SecurityConfig,com.nonononoki.alovoa.config.SecurityConfig; com.nonononoki.alovoa.component.CustomTokenBasedRememberMeServices
+a3,com.nonononoki.alovoa.rest,Oauth2Controller,getOauthParams,3,1,3,211,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.rest,ImprintController,contact,3,1,1,23,0,com.nonononoki.alovoa.service.ImprintService,com.nonononoki.alovoa.service.ImprintService
+a3,com.nonononoki.alovoa.rest,MessageController,send,3,1,2,43,0,com.nonononoki.alovoa.service.MessageService,com.nonononoki.alovoa.service.MessageService
+a3,com.nonononoki.alovoa.rest,MessageController,getMessages,10,2,3,50,0,com.nonononoki.alovoa.rest.MessageController,com.nonononoki.alovoa.rest.MessageController
+a3,com.nonononoki.alovoa.rest,MessageController,getMessagesModel,29,7,3,62,0,com.nonononoki.alovoa.entity.user.Conversation,com.nonononoki.alovoa.entity.user.Conversation; com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.MessageService; com.nonononoki.alovoa.model.MessageDto
+a3,com.nonononoki.alovoa.rest,SearchController,getUsers,4,1,5,34,0,com.nonononoki.alovoa.rest.SearchController,com.nonononoki.alovoa.rest.SearchController
+a3,com.nonononoki.alovoa.rest,SearchController,getUsersModel,8,2,5,43,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.SearchService
+a3,com.nonononoki.alovoa.rest,SearchController,getUsersDefault,4,1,1,54,0,com.nonononoki.alovoa.rest.SearchController,com.nonononoki.alovoa.rest.SearchController
+a3,com.nonononoki.alovoa.rest,SearchController,getUsersDefaultModel,8,2,1,62,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.SearchService
+a3,com.nonononoki.alovoa.rest,PublicController,text,3,1,2,19,0,com.nonononoki.alovoa.service.PublicService,com.nonononoki.alovoa.service.PublicService
+a3,com.nonononoki.alovoa.rest,CaptchaController,generate,3,1,0,21,0,com.nonononoki.alovoa.service.CaptchaService,com.nonononoki.alovoa.service.CaptchaService
+a3,com.nonononoki.alovoa.rest,ApiController,donateRecent,5,1,2,43,0,com.nonononoki.alovoa.rest.DonateController,com.nonononoki.alovoa.rest.DonateController
+a3,com.nonononoki.alovoa.rest,ApiController,messageUpdate,10,2,2,53,0,com.nonononoki.alovoa.rest.MessageController,com.nonononoki.alovoa.rest.MessageController
+a3,com.nonononoki.alovoa.rest,ApiController,searchUsers,4,1,4,68,0,com.nonononoki.alovoa.rest.SearchController,com.nonononoki.alovoa.rest.SearchController
+a3,com.nonononoki.alovoa.rest,ApiController,searchUsersDefault,4,1,0,77,0,com.nonononoki.alovoa.rest.SearchController,com.nonononoki.alovoa.rest.SearchController
+a3,com.nonononoki.alovoa.rest,DonateController,filterRecent,4,1,2,54,0,com.nonononoki.alovoa.rest.DonateController,com.nonononoki.alovoa.rest.DonateController
+a3,com.nonononoki.alovoa.rest,DonateController,filterRecentModel,10,2,2,62,0,com.nonononoki.alovoa.service.AuthService,com.nonononoki.alovoa.service.AuthService; com.nonononoki.alovoa.service.DonateService
+a3,com.nonononoki.alovoa.rest,DonateController,receivedKofi,5,1,2,75,0,com.nonononoki.alovoa.service.DonateService,com.nonononoki.alovoa.service.DonateService
+a3,com.nonononoki.alovoa.rest,DonateController,receivedBmac,6,1,2,83,0,com.nonononoki.alovoa.service.DonateService,com.nonononoki.alovoa.service.DonateService
+a3,com.nonononoki.alovoa.rest,UserController,post,2,1,0,41,0,,
+a3,com.nonononoki.alovoa.rest,UserController,deleteAccount,3,1,0,46,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,deleteAccountConfirm,3,1,1,51,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,getUserdata,3,1,1,57,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,onboarding,3,1,1,65,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,deleteProfilePicture,3,1,0,70,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,updateProfilePicture,6,2,1,75,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,updateVerificationPicture,6,2,1,83,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,upvoteVerificationPicture,3,1,1,91,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,downvoteVerificationPicture,3,1,1,98,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,getAudio,3,1,1,105,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,deleteAudio,3,1,0,112,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,updateAudio,6,2,2,117,0,com.nonononoki.alovoa.Tools,com.nonononoki.alovoa.Tools; com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,updateDescription,3,1,1,126,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,updateIntention,3,1,1,131,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,updateMinAge,3,1,1,136,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,updateMaxAge,3,1,1,141,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,updatePreferedGenders,3,1,2,146,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.rest,UserController,updateMiscInfo,3,1,2,151,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.rest,UserController,addInterest,3,1,1,156,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,deleteInterest,3,1,1,161,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,interestAutocomplete,3,1,1,166,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,updateAccentColor,3,1,1,171,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,updateUiDesign,3,1,1,176,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,updateZodiac,3,1,1,181,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,updateUnits,3,1,1,186,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,addImage,6,2,1,191,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService; com.nonononoki.alovoa.Tools
+a3,com.nonononoki.alovoa.rest,UserController,deleteImage,3,1,1,199,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,likeUser,3,1,1,204,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,hideUser,3,1,1,210,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,blockUser,3,1,1,217,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,unblockUser,3,1,1,224,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,reportUser,3,1,2,231,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,newAlert,3,1,0,238,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,newAlert2,3,1,1,243,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService
+a3,com.nonononoki.alovoa.rest,UserController,newMessage,3,1,0,248,0,com.nonononoki.alovoa.service.UserService,com.nonononoki.alovoa.service.UserService

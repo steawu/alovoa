@@ -1,0 +1,539 @@
+Project Name,Package Name,Type Name,Method Name,Implementation Smell,Cause of the Smell,Method start line no
+a3,com.nonononoki.alovoa,ToolsTest,test,Magic Number,The method contains a magic number: 0.45,19
+a3,com.nonononoki.alovoa,ToolsTest,test,Magic Number,The method contains a magic number: 50,19
+a3,com.nonononoki.alovoa,ToolsTest,testUsersCompatible,Magic Number,The method contains a magic number: 20,37
+a3,com.nonononoki.alovoa,ToolsTest,testUsersCompatible,Magic Number,The method contains a magic number: 20,37
+a3,com.nonononoki.alovoa,ToolsTest,testUsersCompatible,Magic Number,The method contains a magic number: 20,37
+a3,com.nonononoki.alovoa,ToolsTest,testUsersCompatible,Magic Number,The method contains a magic number: 20,37
+a3,com.nonononoki.alovoa,ToolsTest,testUsersCompatible,Magic Number,The method contains a magic number: 20,37
+a3,com.nonononoki.alovoa,ToolsTest,testUsersCompatible,Magic Number,The method contains a magic number: 20,37
+a3,com.nonononoki.alovoa,ToolsTest,testUsersCompatible,Magic Number,The method contains a magic number: 19,37
+a3,com.nonononoki.alovoa,ToolsTest,testUsersCompatible,Magic Number,The method contains a magic number: 20,37
+a3,com.nonononoki.alovoa,ToolsTest,testUsersCompatible,Magic Number,The method contains a magic number: 19,37
+a3,com.nonononoki.alovoa,ToolsTest,testUsersCompatible,Magic Number,The method contains a magic number: 20,37
+a3,com.nonononoki.alovoa,ToolsTest,testUsersCompatible,Magic Number,The method contains a magic number: 21,37
+a3,com.nonononoki.alovoa,ToolsTest,testUsersCompatible,Magic Number,The method contains a magic number: 20,37
+a3,com.nonononoki.alovoa,ToolsTest,testUsersCompatible,Magic Number,The method contains a magic number: 16,37
+a3,com.nonononoki.alovoa,ToolsTest,testMinMaxAgePreferences,Magic Number,The method contains a magic number: 20,98
+a3,com.nonononoki.alovoa,ToolsTest,testMinMaxAgePreferences,Magic Number,The method contains a magic number: 18,98
+a3,com.nonononoki.alovoa,ToolsTest,testMinMaxAgePreferences,Magic Number,The method contains a magic number: 45,98
+a3,com.nonononoki.alovoa,ToolsTest,testMinMaxAgePreferences,Magic Number,The method contains a magic number: 18,98
+a3,com.nonononoki.alovoa,ToolsTest,testMinMaxAgePreferences,Magic Number,The method contains a magic number: 45,98
+a3,com.nonononoki.alovoa,ToolsTest,testMinMaxAgePreferences,Magic Number,The method contains a magic number: 21,98
+a3,com.nonononoki.alovoa,ToolsTest,testMinMaxAgePreferences,Magic Number,The method contains a magic number: 19,98
+a3,com.nonononoki.alovoa,ToolsTest,testMinMaxAgePreferences,Magic Number,The method contains a magic number: 46,98
+a3,com.nonononoki.alovoa,ToolsTest,testMinMaxAgePreferences,Magic Number,The method contains a magic number: 25,98
+a3,com.nonononoki.alovoa,ToolsTest,testMinMaxAgePreferences,Magic Number,The method contains a magic number: 55,98
+a3,com.nonononoki.alovoa,ToolsTest,testMinMaxAgePreferences,Magic Number,The method contains a magic number: 25,98
+a3,com.nonononoki.alovoa,ToolsTest,testMinMaxAgePreferences,Magic Number,The method contains a magic number: 55,98
+a3,com.nonononoki.alovoa,ToolsTest,testLargeNumberToString,Magic Number,The method contains a magic number: 1230000000,124
+a3,com.nonononoki.alovoa,ToolsTest,testLargeNumberToString,Magic Number,The method contains a magic number: 12340000,124
+a3,com.nonononoki.alovoa,ToolsTest,testLargeNumberToString,Magic Number,The method contains a magic number: 1000,124
+a3,com.nonononoki.alovoa,ToolsTest,testLargeNumberToString,Magic Number,The method contains a magic number: 123,124
+a3,com.nonononoki.alovoa,Tools,getDistanceToUser,Long Statement,The length of the statement "return calcDistanceKm(user.getLocationLatitude()`user.getLocationLongitude()`currUser.getLocationLatitude()`currUser.getLocationLongitude());" is 141.,146
+a3,com.nonononoki.alovoa,Tools,getDistanceToUser,Magic Number,The method contains a magic number: 99999,146
+a3,com.nonononoki.alovoa,Tools,getBase64Size,Magic Number,The method contains a magic number: 2,157
+a3,com.nonononoki.alovoa,Tools,getBase64Size,Magic Number,The method contains a magic number: 4,157
+a3,com.nonononoki.alovoa,Tools,getBase64Size,Magic Number,The method contains a magic number: 3,157
+a3,com.nonononoki.alovoa,Tools,calcDistanceKm,Long Statement,The length of the statement "double a=Math.sin(latDistance / 2) * Math.sin(latDistance / 2) + Math.cos(Math.toRadians(userLat)) * Math.cos(Math.toRadians(venueLat)) * Math.sin(lngDistance / 2)* Math.sin(lngDistance / 2);" is 191.,175
+a3,com.nonononoki.alovoa,Tools,calcDistanceKm,Magic Number,The method contains a magic number: 2,175
+a3,com.nonononoki.alovoa,Tools,calcDistanceKm,Magic Number,The method contains a magic number: 2,175
+a3,com.nonononoki.alovoa,Tools,calcDistanceKm,Magic Number,The method contains a magic number: 2,175
+a3,com.nonononoki.alovoa,Tools,calcDistanceKm,Magic Number,The method contains a magic number: 2,175
+a3,com.nonononoki.alovoa,Tools,calcDistanceKm,Magic Number,The method contains a magic number: 2,175
+a3,com.nonononoki.alovoa,Tools,usersCompatible,Complex Conditional,The conditional expression user2.getPreferedGenders() == null || user1.getPreferedGenders() == null || user1.getDates() == null || user2.getDates() == null is complex.,188
+a3,com.nonononoki.alovoa,Tools,usersCompatible,Long Statement,The length of the statement "if (user2.getPreferedGenders() == null || user1.getPreferedGenders() == null || user1.getDates() == null || user2.getDates() == null) {" is 135.,188
+a3,com.nonononoki.alovoa,Tools,usersCompatible,Long Statement,The length of the statement "return user2Age < AGE_LEGAL == user1Age < AGE_LEGAL && user2.getPreferedGenders().contains(user1.getGender()) && user1.getPreferedGenders().contains(user2.getGender()) && user1.getPreferedMaxAge() >= user2Age && user1.getPreferedMinAge() <= user2Age && user2.getPreferedMaxAge() >= user1Age && user2.getPreferedMinAge() <= user1Age && user2.getIntention().getText().equals(user1.getIntention().getText());" is 405.,188
+a3,com.nonononoki.alovoa,Tools,getCountryEmoji,Magic Number,The method contains a magic number: 0x41,238
+a3,com.nonononoki.alovoa,Tools,getCountryEmoji,Magic Number,The method contains a magic number: 0x1F1E6,238
+a3,com.nonononoki.alovoa,Tools,getCountryEmoji,Magic Number,The method contains a magic number: 0x41,238
+a3,com.nonononoki.alovoa,Tools,getCountryEmoji,Magic Number,The method contains a magic number: 0x1F1E6,238
+a3,com.nonononoki.alovoa,Tools,getAuthParams,Long Parameter List,The method has 6 parameters. ,257
+a3,com.nonononoki.alovoa,Tools,getAuthParams,Long Statement,The length of the statement "builder.append("?remember-me=").append(cookieData).append("&jsessionid=").append(httpSessionId).append("&page=").append(page);" is 126.,257
+a3,com.nonononoki.alovoa,Tools,getAuthParams,Long Parameter List,The method has 5 parameters. ,269
+a3,com.nonononoki.alovoa.html,UserProfileResourceTest,before,Long Statement,The length of the statement "Mockito.when(mailService.sendMail(Mockito.any(String.class)`any(String.class)`any(String.class)`any(String.class))).thenReturn(true);" is 133.,77
+a3,com.nonononoki.alovoa.html,MessageResourceTest,before,Long Statement,The length of the statement "Mockito.when(mailService.sendMail(Mockito.any(String.class)`any(String.class)`any(String.class)`any(String.class))).thenReturn(true);" is 133.,69
+a3,com.nonononoki.alovoa.html,MessageResourceTest,test,Magic Number,The method contains a magic number: 2,82
+a3,com.nonononoki.alovoa.html,PasswordResourceTest,before,Long Statement,The length of the statement "Mockito.when(mailService.sendMail(Mockito.any(String.class)`any(String.class)`any(String.class)`any(String.class))).thenReturn(true);" is 133.,65
+a3,com.nonononoki.alovoa.html,BlockedUsersResourceTest,before,Long Statement,The length of the statement "Mockito.when(mailService.sendMail(Mockito.any(String.class)`any(String.class)`any(String.class)`any(String.class))).thenReturn(true);" is 133.,67
+a3,com.nonononoki.alovoa.html,DonateResourceTest,before,Long Statement,The length of the statement "Mockito.when(mailService.sendMail(Mockito.any(String.class)`any(String.class)`any(String.class)`any(String.class))).thenReturn(true);" is 133.,65
+a3,com.nonononoki.alovoa.html,SearchResourceTest,before,Long Statement,The length of the statement "Mockito.when(mailService.sendMail(Mockito.any(String.class)`any(String.class)`any(String.class)`any(String.class))).thenReturn(true);" is 133.,65
+a3,com.nonononoki.alovoa.html,NotificationResourceTest,before,Long Statement,The length of the statement "Mockito.when(mailService.sendMail(Mockito.any(String.class)`any(String.class)`any(String.class)`any(String.class))).thenReturn(true);" is 133.,67
+a3,com.nonononoki.alovoa.html,NotificationResourceTest,test,Magic Number,The method contains a magic number: 2,80
+a3,com.nonononoki.alovoa.html,ProfileResourceTest,before,Long Statement,The length of the statement "Mockito.when(mailService.sendMail(Mockito.any(String.class)`any(String.class)`any(String.class)`any(String.class))).thenReturn(true);" is 133.,65
+a3,com.nonononoki.alovoa.html,DeleteAccountResourceTest,before,Long Statement,The length of the statement "Mockito.when(mailService.sendMail(Mockito.any(String.class)`any(String.class)`any(String.class)`any(String.class))).thenReturn(true);" is 133.,65
+a3,com.nonononoki.alovoa.html,InfoResource,imprint,Long Statement,The length of the statement "mav.addObject("info"`objectMapper.writeValueAsString(InfoDto.builder().numConfirmedUsers(userRepo.countByConfirmed(true)).numFemaleUser(userRepo.countByConfirmedAndGenderId(true`Tools.GENDER_FEMALE_ID)).numMaleUsers(userRepo.countByConfirmedAndGenderId(true`Tools.GENDER_MALE_ID)).numLikes(userLikeRepo.count()).numMatches(conversationRepo.count()).build()));" is 359.,31
+a3,com.nonononoki.alovoa.html,NotificationResource,notification,Long Statement,The length of the statement "boolean blockedMe=user.getBlockedByUsers().stream().anyMatch(b -> b.getUserFrom().getId().equals(n.getUserFrom().getId()));" is 123.,41
+a3,com.nonononoki.alovoa.html,DislikedUsersResource,dislikedUsers,Long Statement,The length of the statement "List<User> dislikedUsers=userDislikes.stream().sorted(Comparator.comparing(UserHide::getDate).reversed()).limit(MAX_RESULTS).map(b -> b.getUserTo()).collect(Collectors.toList());" is 178.,38
+a3,com.nonononoki.alovoa.html,BlockedUsersResource,blockedUsers,Long Statement,The length of the statement "List<User> blockedUsers=userBlocks.stream().sorted(Comparator.comparing(UserBlock::getDate).reversed()).limit(MAX_RESULTS).map(b -> b.getUserTo()).collect(Collectors.toList());" is 176.,38
+a3,com.nonononoki.alovoa.html,SearchResource,search,Complex Conditional,The conditional expression !user.isAdmin() && user.getProfilePicture() == null && user.getDescription() == null is complex.,46
+a3,com.nonononoki.alovoa.html,AdminVerificationResource,admin,Long Statement,The length of the statement "List<UserVerificationPicture> verificationPictures=userVerificationPictureRepo.findTop20ByVerifiedByAdminFalseOrderByDateAsc();" is 127.,40
+a3,com.nonononoki.alovoa.html,LikedUsersResource,likedUsers,Long Statement,The length of the statement "List<User> likedUsers=userLikes.stream().sorted(Comparator.comparing(UserLike::getDate).reversed()).limit(MAX_RESULTS).map(b -> b.getUserTo()).collect(Collectors.toList());" is 172.,38
+a3,com.nonononoki.alovoa.html,ProfileResource,profile,Long Statement,The length of the statement "if (user.getDates().getIntentionChangeDate() == null || now.getTime() >= user.getDates().getIntentionChangeDate().getTime() + intentionDelay) {" is 143.,58
+a3,com.nonononoki.alovoa.html,ProfileResource,getWarnings,Long Statement,The length of the statement "return ProfileWarningDto.builder().hasWarning(hasWarning).noDescription(noDescription).noGender(noGender).noIntention(noIntention).noLocation(noLocation).noProfilePicture(noProfilePicture).build();" is 197.,121
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,before,Long Statement,The length of the statement "Mockito.when(mailService.sendMail(Mockito.any(String.class)`any(String.class)`any(String.class)`any(String.class))).thenReturn(true);" is 133.,117
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Long Method,The method has 199 lines of code.,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 4,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 100,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 16,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 100,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 16,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 3,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 3,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 50,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 50,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 50,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 3,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 3,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 3,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 50,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 0.45,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 50,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 0.46,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 50,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 50,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 50,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 50,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 50,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 50,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 50,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 50,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,SearchAndMessageServiceTest,test,Magic Number,The method contains a magic number: 3,130
+a3,com.nonononoki.alovoa.service,NotificationServiceTest,before,Long Statement,The length of the statement "Mockito.when(mailService.sendMail(Mockito.any(String.class)`any(String.class)`any(String.class)`any(String.class))).thenReturn(true);" is 133.,75
+a3,com.nonononoki.alovoa.service,ScheduleServiceTest,before,Long Statement,The length of the statement "Mockito.when(mailService.sendMail(Mockito.any(String.class)`any(String.class)`any(String.class)`any(String.class))).thenReturn(true);" is 133.,90
+a3,com.nonononoki.alovoa.service,ScheduleServiceTest,test,Magic Number,The method contains a magic number: 2,103
+a3,com.nonononoki.alovoa.service,ScheduleServiceTest,test,Magic Number,The method contains a magic number: 2,103
+a3,com.nonononoki.alovoa.service,ScheduleServiceTest,test,Magic Number,The method contains a magic number: 2,103
+a3,com.nonononoki.alovoa.service,ScheduleServiceTest,test,Magic Number,The method contains a magic number: 2,103
+a3,com.nonononoki.alovoa.service,RegisterServiceTest,getTestUsers,Magic Number,The method contains a magic number: 2,115
+a3,com.nonononoki.alovoa.service,RegisterServiceTest,getTestUsers,Magic Number,The method contains a magic number: 2,115
+a3,com.nonononoki.alovoa.service,RegisterServiceTest,deleteAllUsers,Long Parameter List,The method has 5 parameters. ,170
+a3,com.nonononoki.alovoa.service,PasswordServiceTest,before,Long Statement,The length of the statement "Mockito.when(mailService.sendMail(Mockito.any(String.class)`any(String.class)`any(String.class)`any(String.class))).thenReturn(true);" is 133.,79
+a3,com.nonononoki.alovoa.service,AdminServiceTest,before,Long Statement,The length of the statement "Mockito.when(mailService.sendMail(Mockito.any(String.class)`any(String.class)`any(String.class)`any(String.class))).thenReturn(true);" is 133.,90
+a3,com.nonononoki.alovoa.service,AdminServiceTest,test,Magic Number,The method contains a magic number: 10.00,103
+a3,com.nonononoki.alovoa.service,UserServiceTest,before,Long Statement,The length of the statement "Mockito.when(mailService.sendMail(Mockito.any(String.class)`any(String.class)`any(String.class)`any(String.class))).thenReturn(true);" is 133.,84
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Long Method,The method has 123 lines of code.,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Long Statement,The length of the statement "String userDataString=new BufferedReader(new InputStreamReader(inputStream`StandardCharsets.UTF_8)).lines().collect(Collectors.joining("\n"));" is 142.,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Long Statement,The length of the statement "assertEquals(objectMapper.writeValueAsString(authService.getCurrentUser().getDates())`objectMapper.writeValueAsString(gdpr.getDates()));" is 136.,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Long Statement,The length of the statement "assertEquals(objectMapper.writeValueAsString(authService.getCurrentUser().getDonations())`objectMapper.writeValueAsString(gdpr.getDonations()));" is 144.,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Long Statement,The length of the statement "assertEquals(objectMapper.writeValueAsString(authService.getCurrentUser().getGender())`objectMapper.writeValueAsString(gdpr.getGender()));" is 138.,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Long Statement,The length of the statement "assertEquals(objectMapper.writeValueAsString(authService.getCurrentUser().getIntention())`objectMapper.writeValueAsString(gdpr.getIntention()));" is 144.,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Magic Number,The method contains a magic number: 2,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Magic Number,The method contains a magic number: 4,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Magic Number,The method contains a magic number: 100,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Magic Number,The method contains a magic number: 16,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Magic Number,The method contains a magic number: 2,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Magic Number,The method contains a magic number: 100,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Magic Number,The method contains a magic number: 16,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Magic Number,The method contains a magic number: 3,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Magic Number,The method contains a magic number: 2,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Magic Number,The method contains a magic number: 3,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Magic Number,The method contains a magic number: 2,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Magic Number,The method contains a magic number: 2,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,test,Magic Number,The method contains a magic number: 0.001,97
+a3,com.nonononoki.alovoa.service,UserServiceTest,testGetInterestAutocomplete,Magic Number,The method contains a magic number: 2,255
+a3,com.nonononoki.alovoa.service,UserServiceTest,testGetInterestAutocomplete,Magic Number,The method contains a magic number: 2,255
+a3,com.nonononoki.alovoa.service,UserServiceTest,testGetInterestAutocomplete,Magic Number,The method contains a magic number: 2,255
+a3,com.nonononoki.alovoa.service,UserServiceTest,testGetInterestAutocomplete,Magic Number,The method contains a magic number: 2,255
+a3,com.nonononoki.alovoa.service,UserServiceTest,testGetInterestAutocomplete,Magic Number,The method contains a magic number: 2,255
+a3,com.nonononoki.alovoa.service,UserServiceTest,testGetInterestAutocomplete,Magic Number,The method contains a magic number: 2,255
+a3,com.nonononoki.alovoa.service,UserServiceTest,testGetInterestAutocomplete,Magic Number,The method contains a magic number: 3,255
+a3,com.nonononoki.alovoa.service,UserServiceTest,testGetInterestAutocomplete,Magic Number,The method contains a magic number: 4,255
+a3,com.nonononoki.alovoa.service,UserServiceTest,testVerificationProcess,Magic Number,The method contains a magic number: 2,314
+a3,com.nonononoki.alovoa.service,DonateServiceTest,before,Long Statement,The length of the statement "Mockito.when(mailService.sendMail(Mockito.any(String.class)`any(String.class)`any(String.class)`any(String.class))).thenReturn(true);" is 133.,81
+a3,com.nonononoki.alovoa.service,DonateServiceTest,test,Magic Number,The method contains a magic number: 0.001,94
+a3,com.nonononoki.alovoa.service,DonateServiceTest,test,Magic Number,The method contains a magic number: 15,94
+a3,com.nonononoki.alovoa.service,DonateServiceTest,test,Magic Number,The method contains a magic number: 2,94
+a3,com.nonononoki.alovoa.service,DonateServiceTest,testWithRealDataKofi,Long Statement,The length of the statement "String kofiString="{\"email\":\"" + user2.getEmail() + "\"`\"message_id\":\"27c5906e-8a77-4949-844c-a08d13f70340\"`\"message\":\""+ user2.getEmail()+ "\"`\"timestamp\":\"2022-06-26T08:24:19Z\"`\"type\":\"Donation\"`\"from_name\":\"Somebody\"`\"amount\":\"3.00\"`\"url\":\"https://ko-fi.com/Home/CoffeeShop?txid=e0397a56-594f-4764-8f80-761baafcdbf4&readToken=e274f1de-5fb3-4e38-86df-4af1de6bb3c9\"`\"kofi_transaction_id\":\"e0397a56-594f-4764-8f80-761baafcdbf5\"`\"_public\":false}";" is 482.,130
+a3,com.nonononoki.alovoa.service,DonateServiceTest,testWithRealDataKofi,Magic Number,The method contains a magic number: 2,130
+a3,com.nonononoki.alovoa.service,RegisterService,registerOauth,Complex Conditional,The conditional expression referrer != null && referrer.isConfirmed() && referrer.getNumberReferred() < referralMax is complex.,156
+a3,com.nonononoki.alovoa.service,RegisterService,registerConfirm,Complex Conditional,The conditional expression referrer != null && referrer.isConfirmed() && referrer.getNumberReferred() < referralMax is complex.,217
+a3,com.nonononoki.alovoa.service,RegisterService,registerBase,Complex Method,Cyclomatic complexity of the method is 9,264
+a3,com.nonononoki.alovoa.service,AdminService,banUser,Long Statement,The length of the statement "UserDeleteParams userDeleteParam=UserDeleteParams.builder().conversationRepo(conversationRepo).userBlockRepo(userBlockRepo).userHideRepo(userHideRepo).userLikeRepo(userLikeRepo).userNotificationRepo(userNotificationRepo).userRepo(userRepo).userReportRepo(userReportRepo).userVerificationPictureRepo(userVerificationPictureRepo).build();" is 336.,138
+a3,com.nonononoki.alovoa.service,AdminService,deleteAccount,Long Statement,The length of the statement "UserDeleteParams userDeleteParam=UserDeleteParams.builder().conversationRepo(conversationRepo).userBlockRepo(userBlockRepo).userHideRepo(userHideRepo).userLikeRepo(userLikeRepo).userNotificationRepo(userNotificationRepo).userRepo(userRepo).userReportRepo(userReportRepo).build();" is 279.,199
+a3,com.nonononoki.alovoa.service,UserService,removeUserDataCascading,Complex Method,Cyclomatic complexity of the method is 26,125
+a3,com.nonononoki.alovoa.service,UserService,removeUserDataCascading,Long Method,The method has 130 lines of code.,125
+a3,com.nonononoki.alovoa.service,UserService,convertAudioMp3Wav,Magic Number,The method contains a magic number: 16000,281
+a3,com.nonononoki.alovoa.service,UserService,convertAudioMp3Wav,Magic Number,The method contains a magic number: 8,281
+a3,com.nonononoki.alovoa.service,UserService,deleteAccountConfirm,Long Statement,The length of the statement "UserDeleteParams userDeleteParam=UserDeleteParams.builder().conversationRepo(conversationRepo).userBlockRepo(userBlockRepo).userHideRepo(userHideRepo).userLikeRepo(userLikeRepo).userNotificationRepo(userNotificationRepo).userRepo(userRepo).userReportRepo(userReportRepo).userVerificationPictureRepo(userVerificationPictureRepo).build();" is 336.,307
+a3,com.nonononoki.alovoa.service,UserService,updateIntention,Long Statement,The length of the statement "if (user.getDates().getIntentionChangeDate() == null || now.getTime() >= user.getDates().getIntentionChangeDate().getTime() + intentionDelay) {" is 143.,421
+a3,com.nonononoki.alovoa.service,UserService,updateUserMiscInfo,Long Statement,The length of the statement "list.removeIf(o -> o.getValue() != infoValue && o.getValue() >= UserMiscInfo.KIDS_NO && o.getValue() <= UserMiscInfo.KIDS_YES);" is 127.,475
+a3,com.nonononoki.alovoa.service,UserService,updateUserMiscInfo,Long Statement,The length of the statement "list.removeIf(o -> o.getValue() != infoValue && o.getValue() >= UserMiscInfo.RELATIONSHIP_SINGLE && o.getValue() <= UserMiscInfo.RELATIONSHIP_OTHER);" is 149.,475
+a3,com.nonononoki.alovoa.service,UserService,addInterest,Complex Conditional,The conditional expression value.length() < interestMinCharSize || value.length() > interestMaxCharSize || user.getInterests().size() >= interestSize is complex.,501
+a3,com.nonononoki.alovoa.service,UserService,addInterest,Long Statement,The length of the statement "if (value.length() < interestMinCharSize || value.length() > interestMaxCharSize || user.getInterests().size() >= interestSize) {" is 129.,501
+a3,com.nonononoki.alovoa.service,UserService,getInterestAutocomplete,Long Statement,The length of the statement "List<UserInterestDto> interests=userInterestRepo.getInterestAutocomplete(name`interestTexts`PageRequest.of(0`interestAutocompleteMax));" is 135.,546
+a3,com.nonononoki.alovoa.service,UserService,adjustPicture,Magic Number,The method contains a magic number: 2,607
+a3,com.nonononoki.alovoa.service,UserService,adjustPicture,Magic Number,The method contains a magic number: 2,607
+a3,com.nonononoki.alovoa.service,UserService,adjustPicture,Magic Number,The method contains a magic number: 2,607
+a3,com.nonononoki.alovoa.service,UserService,adjustPicture,Magic Number,The method contains a magic number: 2,607
+a3,com.nonononoki.alovoa.service,UserService,hasNewMessage,Complex Conditional,The conditional expression user != null && user.getDates().getMessageDate() != null && user.getDates().getMessageCheckedDate() != null is complex.,823
+a3,com.nonononoki.alovoa.service,UserService,upvoteVerificationPicture,Long Statement,The length of the statement "if (user.getVerificationPicture().getUserYes().contains(currentUser) || user.getVerificationPicture().getUserNo().contains(currentUser)) {" is 138.,967
+a3,com.nonononoki.alovoa.service,UserService,downvoteVerificationPicture,Long Statement,The length of the statement "if (user.getVerificationPicture().getUserYes().contains(currentUser) || user.getVerificationPicture().getUserNo().contains(currentUser)) {" is 138.,987
+a3,com.nonononoki.alovoa.service,DonateService,filter,Long Statement,The length of the statement "donationsToDtos=DonationDto.donationsToDtos(userDonationRepo.findTop20ByUserDatesDateOfBirthGreaterThanEqualAndUserDatesDateOfBirthLessThanEqualOrderByDateDesc(minDate`maxDate)`user`userService`textEncryptor`maxEntries);" is 220.,63
+a3,com.nonononoki.alovoa.service,DonateService,filter,Long Statement,The length of the statement "donationsToDtos=DonationDto.usersToDtos(userRepo.usersDonate(minDate`maxDate)`user`userService`textEncryptor`maxEntries);" is 121.,63
+a3,com.nonononoki.alovoa.service,DonateService,donationReceivedKofi,Complex Conditional,The conditional expression profile.equals(Tools.PROD) && (KOFI_TEST_TRANSACTION_ID.equals(donation.getKofi_transaction_id()) || donation.getEmail() != null && KOFI_TEST_EMAIL.equalsIgnoreCase(donation.getEmail())) is complex.,102
+a3,com.nonononoki.alovoa.service,DonateService,donationReceivedKofi,Long Statement,The length of the statement "if (profile.equals(Tools.PROD) && (KOFI_TEST_TRANSACTION_ID.equals(donation.getKofi_transaction_id()) || donation.getEmail() != null && KOFI_TEST_EMAIL.equalsIgnoreCase(donation.getEmail()))) {" is 193.,102
+a3,com.nonononoki.alovoa.service,MailService,sendMailWithAttachment,Long Parameter List,The method has 6 parameters. ,79
+a3,com.nonononoki.alovoa.service,MailService,sendRegistrationMail,Long Statement,The length of the statement "String body=messageSource.getMessage("backend.mail.register.body"`new String[]{user.getFirstName()`appName`appDomain`user.getRegisterToken().getContent()}`""`locale);" is 166.,105
+a3,com.nonononoki.alovoa.service,MailService,sendPasswordResetMail,Long Statement,The length of the statement "String body=messageSource.getMessage("backend.mail.password-reset.body"`new String[]{user.getFirstName()`appName`appDomain`user.getPasswordToken().getContent()}`locale);" is 169.,115
+a3,com.nonononoki.alovoa.service,MailService,sendAccountDeleteRequest,Long Statement,The length of the statement "String body=messageSource.getMessage("backend.mail.account-delete-request.body"`new String[]{user.getFirstName()`appName`appDomain`user.getDeleteToken().getContent()}`""`locale);" is 178.,124
+a3,com.nonononoki.alovoa.service,MailService,sendAccountDeleteConfirm,Long Statement,The length of the statement "String body=messageSource.getMessage("backend.mail.account-delete-confirm.body"`new String[]{user.getFirstName()`appName}`locale);" is 130.,134
+a3,com.nonononoki.alovoa.service,MailService,sendAccountConfirmed,Long Statement,The length of the statement "String body=messageSource.getMessage("backend.mail.account-confirmed.body"`new String[]{user.getFirstName()`appName`appDomain}`""`locale);" is 138.,143
+a3,com.nonononoki.alovoa.service,NotificationService,send,Long Statement,The length of the statement "Notification notification=new Notification(uwp.getEndPoint()`uwp.getPublicKey()`uwp.getAuth()`objectMapper.writeValueAsBytes(message));" is 135.,132
+a3,com.nonononoki.alovoa.service,SearchService,search,Complex Conditional,The conditional expression !latitude.equals(user.getLocationLatitude()) || !longitude.equals(user.getLocationLongitude()) || user.getCountry() == null is complex.,92
+a3,com.nonononoki.alovoa.service,SearchService,search,Complex Method,Cyclomatic complexity of the method is 19,92
+a3,com.nonononoki.alovoa.service,SearchService,search,Magic Number,The method contains a magic number: 180.0,92
+a3,com.nonononoki.alovoa.service,SearchService,search,Magic Number,The method contains a magic number: 180.0,92
+a3,com.nonononoki.alovoa.service,SearchService,search,Magic Number,The method contains a magic number: 180.0,92
+a3,com.nonononoki.alovoa.service,SearchService,search,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@7d3da019,92
+a3,com.nonononoki.alovoa.service,SearchService,searchResultstoUserDto,Long Statement,The length of the statement "userDtos=userDtos.stream().filter(f -> f.getCommonInterests().size() > 0).sorted(comparatorCommonInterest.reversed().thenComparing(Comparator.comparing(UserDto::getDistanceToUser).reversed())).collect(Collectors.toList());" is 222.,303
+a3,com.nonononoki.alovoa.service,MessageService,send,Complex Method,Cyclomatic complexity of the method is 8,40
+a3,com.nonononoki.alovoa.service,MessageService,updateCheckedDate,Long Statement,The length of the statement "ConversationCheckedDate convoCheckedDate=c.getCheckedDates().stream().filter(d -> d.getUserId().equals(user.getId())).findAny().orElse(null);" is 141.,94
+a3,com.nonononoki.alovoa.config,SecurityConfig,filterChain,Long Statement,The length of the statement "http.authorizeHttpRequests().requestMatchers("/admin").hasAnyAuthority(ROLE_ADMIN).requestMatchers("/admin/**").hasAnyAuthority(ROLE_ADMIN).requestMatchers("/css/**").permitAll().requestMatchers("/js/**").permitAll().requestMatchers("/img/**").permitAll().requestMatchers("/font/**").permitAll().requestMatchers("/json/**").permitAll().requestMatchers("/oauth2/**").permitAll().requestMatchers("/").permitAll().requestMatchers("/login/**").permitAll().requestMatchers("/terms-conditions").permitAll().requestMatchers("/imprint").permitAll().requestMatchers("/imprint/*").permitAll().requestMatchers("/privacy").permitAll().requestMatchers("/faq").permitAll().requestMatchers("/tos").permitAll().requestMatchers("/register").permitAll().requestMatchers("/register/**").permitAll().requestMatchers("/captcha/**").permitAll().requestMatchers("/donate-list").permitAll().requestMatchers("/donate/received/**").permitAll().requestMatchers("/password/**").permitAll().requestMatchers("/favicon.ico").permitAll().requestMatchers("/sw.js").permitAll().requestMatchers("/robots.txt").permitAll().requestMatchers("/.well-known/assetlinks.json").permitAll().requestMatchers("/text/*").permitAll().requestMatchers("/manifest/**").permitAll().requestMatchers("/fonts/**").permitAll().requestMatchers("/error").permitAll().anyRequest().authenticated().and().formLogin().loginPage("/login").and().logout().deleteCookies(COOKIE_SESSION`COOKIE_REMEMBER).logoutUrl("/logout").logoutSuccessUrl("/?logout").and().oauth2Login().loginPage("/login").defaultSuccessUrl("/login/oauth2/success").and().addFilterBefore(authenticationFilter()`UsernamePasswordAuthenticationFilter.class).rememberMe().rememberMeServices(oAuthRememberMeServices()).key(rememberKey);" is 1735.,79
+a3,com.nonononoki.alovoa.config,SecurityConfig,filterChain,Long Statement,The length of the statement "http.sessionManagement().maximumSessions(10).expiredSessionStrategy(getSessionInformationExpiredStrategy()).sessionRegistry(sessionRegistry());" is 143.,79
+a3,com.nonononoki.alovoa.config,SecurityConfig,filterChain,Magic Number,The method contains a magic number: 10,79
+a3,com.nonononoki.alovoa.config,SecurityConfig,oAuthRememberMeServices,Long Statement,The length of the statement "CustomTokenBasedRememberMeServices rememberMeService=new CustomTokenBasedRememberMeServices(rememberKey`customUserDetailsService);" is 130.,165
+a3,com.nonononoki.alovoa.config,EventListenerConfig,setDefaultUserMiscInfo,Long Statement,The length of the statement "userMiscInfoRepo.saveAllAndFlush(Arrays.asList(drugsTobaccoInfo`drugsAlcoholInfo`drugsCannabisInfo`drugsOtherInfo`relationshipSingleInfo`relationshipTakenInfo`relationshipOpenInfo`relationshipOtherInfo`kidsNoInfo`kidsYesInfo));" is 227.,85
+a3,com.nonononoki.alovoa.config,EventListenerConfig,removeInvalidUsers,Long Statement,The length of the statement "UserDeleteParams userDeleteParam=UserDeleteParams.builder().conversationRepo(conversationRepo).userBlockRepo(userBlockRepo).userHideRepo(userHideRepo).userLikeRepo(userLikeRepo).userNotificationRepo(userNotificationRepo).userRepo(userRepo).userReportRepo(userReportRepo).build();" is 279.,199
+a3,com.nonononoki.alovoa.entity,User,setPreferedMinAge,Empty catch clause,The method has an empty catch block.,235
+a3,com.nonononoki.alovoa.entity,User,setPreferedMaxAge,Empty catch clause,The method has an empty catch block.,250
+a3,com.nonononoki.alovoa.component,SuccessHandler,onAuthenticationSuccess,Long Statement,The length of the statement "String redirectUrl=new String(Base64.getDecoder().decode((String)request.getSession().getAttribute(AuthFilter.REDIRECT_URL))`StandardCharsets.UTF_8);" is 149.,43
+a3,com.nonononoki.alovoa.component,SuccessHandler,onAuthenticationSuccess,Long Statement,The length of the statement "redirectUrl=redirectUrl + Tools.getAuthParams(securityConfig`httpSession.getId()`user.getEmail()`user.getFirstName()`page`user.getPassword());" is 142.,43
+a3,com.nonononoki.alovoa.component,AuthProvider,authenticate,Complex Method,Cyclomatic complexity of the method is 9,44
+a3,com.nonononoki.alovoa.component,CustomTokenBasedRememberMeServices,onLoginSuccess,Magic Number,The method contains a magic number: 1000L,35
+a3,com.nonononoki.alovoa.component,CustomTokenBasedRememberMeServices,getRememberMeCookieData,Magic Number,The method contains a magic number: 1000L,90
+a3,com.nonononoki.alovoa.model,NotificationDto,notificationToNotificationDto,Long Statement,The length of the statement "dto.setUserFromDto(UserDto.userToUserDto(n.getUserFrom()`currentUser`userService`textEncryptor`UserDto.PROFILE_PICTURE_ONLY));" is 126.,27
+a3,com.nonononoki.alovoa.model,DonationDto,donationToDto,Long Parameter List,The method has 5 parameters. ,39
+a3,com.nonononoki.alovoa.model,DonationDto,userToDto,Long Parameter List,The method has 5 parameters. ,61
+a3,com.nonononoki.alovoa.model,DonationDto,donationsToDtos,Long Parameter List,The method has 5 parameters. ,71
+a3,com.nonononoki.alovoa.model,DonationDto,usersToDtos,Long Parameter List,The method has 5 parameters. ,88
+a3,com.nonononoki.alovoa.model,UserDto,userToUserDto,Complex Conditional,The conditional expression (mode != NO_AUDIO && mode != PROFILE_PICTURE_ONLY && mode != NO_MEDIA) && user.getAudio() != null is complex.,86
+a3,com.nonononoki.alovoa.model,UserDto,userToUserDto,Complex Method,Cyclomatic complexity of the method is 23,86
+a3,com.nonononoki.alovoa.model,UserDto,userToUserDto,Long Method,The method has 101 lines of code.,86
+a3,com.nonononoki.alovoa.model,UserDto,userToUserDto,Long Parameter List,The method has 5 parameters. ,86
+a3,com.nonononoki.alovoa.model,UserDto,userToUserDto,Long Statement,The length of the statement "dto.blockedByCurrentUser=currentUser.getBlockedUsers().stream().anyMatch(o -> o.getUserTo().getId().equals(user.getId()));" is 122.,86
+a3,com.nonononoki.alovoa.model,UserDto,userToUserDto,Magic Number,The method contains a magic number: 2,86
+a3,com.nonononoki.alovoa.model,UserDto,userToUserDto,Magic Number,The method contains a magic number: 3,86
+a3,com.nonononoki.alovoa.model,UserDto,userToUserDto,Magic Number,The method contains a magic number: 4,86
+a3,com.nonononoki.alovoa.model,UserDto,userToUserDto,Magic Number,The method contains a magic number: 99999,86
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Complex Conditional,The conditional expression (month == 12 && day >= 22 && day <= 31) || (month == 1 && day >= 1 && day <= 19) is complex.,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Complex Conditional,The conditional expression (month == 1 && day >= 20 && day <= 31) || (month == 2 && day >= 1 && day <= 17) is complex.,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Complex Conditional,The conditional expression (month == 2 && day >= 18 && day <= 29) || (month == 3 && day >= 1 && day <= 19) is complex.,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Complex Conditional,The conditional expression (month == 3 && day >= 20 && day <= 31) || (month == 4 && day >= 1 && day <= 19) is complex.,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Complex Conditional,The conditional expression (month == 4 && day >= 20 && day <= 30) || (month == 5 && day >= 1 && day <= 20) is complex.,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Complex Conditional,The conditional expression (month == 5 && day >= 21 && day <= 31) || (month == 6 && day >= 1 && day <= 20) is complex.,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Complex Conditional,The conditional expression (month == 6 && day >= 21 && day <= 30) || (month == 7 && day >= 1 && day <= 22) is complex.,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Complex Conditional,The conditional expression (month == 7 && day >= 23 && day <= 31) || (month == 8 && day >= 1 && day <= 22) is complex.,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Complex Conditional,The conditional expression (month == 8 && day >= 23 && day <= 31) || (month == 9 && day >= 1 && day <= 22) is complex.,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Complex Conditional,The conditional expression (month == 9 && day >= 23 && day <= 30) || (month == 10 && day >= 1 && day <= 22) is complex.,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Complex Conditional,The conditional expression (month == 10 && day >= 23 && day <= 31) || (month == 11 && day >= 1 && day <= 21) is complex.,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Complex Conditional,The conditional expression (month == 11 && day >= 22 && day <= 30) || (month == 12 && day >= 1 && day <= 21) is complex.,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Complex Method,Cyclomatic complexity of the method is 13,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 12,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 22,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 31,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 19,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 20,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 31,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 2,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 17,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 2,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 18,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 29,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 3,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 19,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 3,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 20,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 31,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 4,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 19,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 4,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 20,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 30,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 5,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 20,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 5,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 21,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 31,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 6,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 20,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 6,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 21,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 30,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 7,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 22,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 7,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 23,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 31,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 8,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 22,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 8,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 23,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 31,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 9,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 22,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 9,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 23,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 30,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 10,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 22,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 10,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 23,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 31,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 11,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 21,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 11,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 22,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 30,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 12,222
+a3,com.nonononoki.alovoa.model,UserDto,getUserZodiac,Magic Number,The method contains a magic number: 21,222
+a3,com.nonononoki.alovoa.lib,OxCaptcha,OxCaptcha,Magic Number,The method contains a magic number: 40,51
+a3,com.nonononoki.alovoa.lib,OxCaptcha,setFont,Magic Number,The method contains a magic number: 40,75
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,Magic Number,The method contains a magic number: 5,103
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,Magic Number,The method contains a magic number: 0.05,119
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,Magic Number,The method contains a magic number: 0.75,119
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,Magic Number,The method contains a magic number: 0.05,123
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,Magic Number,The method contains a magic number: 0.75,123
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,Magic Number,The method contains a magic number: 0.05,127
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,Magic Number,The method contains a magic number: 0.75,127
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,Long Parameter List,The method has 5 parameters. ,142
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,Long Parameter List,The method has 5 parameters. ,153
+a3,com.nonononoki.alovoa.lib,OxCaptcha,text,Long Parameter List,The method has 5 parameters. ,161
+a3,com.nonononoki.alovoa.lib,OxCaptcha,textCentered,Magic Number,The method contains a magic number: 2,263
+a3,com.nonononoki.alovoa.lib,OxCaptcha,textCentered,Magic Number,The method contains a magic number: 2,263
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blur,Magic Number,The method contains a magic number: 3,321
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gbConvolve,Magic Number,The method contains a magic number: 2,339
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gbConvolve,Magic Number,The method contains a magic number: 2.0f,339
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian,Magic Number,The method contains a magic number: 2,367
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian3x3,Magic Number,The method contains a magic number: 16f,384
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian3x3,Magic Number,The method contains a magic number: 8f,384
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian3x3,Magic Number,The method contains a magic number: 16f,384
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian3x3,Magic Number,The method contains a magic number: 8f,384
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian3x3,Magic Number,The method contains a magic number: 4f,384
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian3x3,Magic Number,The method contains a magic number: 8f,384
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian3x3,Magic Number,The method contains a magic number: 16f,384
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian3x3,Magic Number,The method contains a magic number: 8f,384
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian3x3,Magic Number,The method contains a magic number: 16f,384
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian3x3,Magic Number,The method contains a magic number: 3,384
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian3x3,Magic Number,The method contains a magic number: 3,384
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Long Statement,The length of the statement "float[] k=new float[]{1f / 273f`4f / 273f`7f / 273f`4f / 273f`1f / 273f`4f / 273f`16f / 273f`26f / 273f`16f / 273f`4f / 273f`7f / 273f`26f / 273f`41f / 273f`26f / 273f`7f / 273f`4f / 273f`16f / 273f`26f / 273f`16f / 273f`4f / 273f`1f / 273f`4f / 273f`7f / 273f`4f / 273f`1f / 273f};" is 282.,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 4f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 7f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 4f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 4f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 16f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 26f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 16f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 4f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 7f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 26f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 41f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 26f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 7f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 4f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 16f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 26f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 16f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 4f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 4f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 7f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 4f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 273f,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 5,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s1,Magic Number,The method contains a magic number: 5,396
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s2,Long Statement,The length of the statement "float[] k=new float[]{0.023528f`0.033969f`0.038393f`0.033969f`0.023528f`0.033969f`0.049045f`0.055432f`0.049045f`0.033969f`0.038393f`0.055432f`0.062651f`0.055432f`0.038393f`0.033969f`0.049045f`0.055432f`0.049045f`0.033969f`0.023528f`0.033969f`0.038393f`0.033969f`0.023528f};" is 273.,411
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s2,Magic Number,The method contains a magic number: 5,411
+a3,com.nonononoki.alovoa.lib,OxCaptcha,blurGaussian5x5s2,Magic Number,The method contains a magic number: 5,411
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,Magic Number,The method contains a magic number: 5,425
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,Magic Number,The method contains a magic number: 2.0f,425
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,Magic Number,The method contains a magic number: 5,429
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,Magic Number,The method contains a magic number: 2.0f,433
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,Long Statement,The length of the statement "CubicCurve2D cc=new CubicCurve2D.Float(xOffset + RAND.nextFloat() * _width * 0.25f`_height * RAND.nextFloat()`xOffset + RAND.nextFloat() * _width * 0.25f`_height * RAND.nextFloat()`xOffset + xRange * 0.4f`_height * RAND.nextFloat()`xOffset + xRange * (0.8f + RAND.nextFloat() * 0.2f)`_height * RAND.nextFloat());" is 312.,441
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,Magic Number,The method contains a magic number: 0.25f,441
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,Magic Number,The method contains a magic number: 0.25f,441
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,Magic Number,The method contains a magic number: 0.4f,441
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,Magic Number,The method contains a magic number: 0.8f,441
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,Magic Number,The method contains a magic number: 0.2f,441
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,Magic Number,The method contains a magic number: 0.1,441
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,Magic Number,The method contains a magic number: 200,441
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,Magic Number,The method contains a magic number: 6,441
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseCurvedLine,Magic Number,The method contains a magic number: 3,441
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStrokes,Magic Number,The method contains a magic number: 8,481
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStrokes,Magic Number,The method contains a magic number: 1.5f,481
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStrokes,Long Statement,The length of the statement "path.curveTo(RAND.nextInt(_width)`RAND.nextInt(_height)`RAND.nextInt(_width)`RAND.nextInt(_height)`RAND.nextInt(_width)`RAND.nextInt(_height));" is 143.,485
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseEllipses,Long Statement,The length of the statement "Ellipse2D.Double ellipse=new Ellipse2D.Double(RAND.nextInt(_width)`RAND.nextInt(_height)`RAND.nextInt(_width)`RAND.nextInt(_height));" is 133.,497
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStraightLine,Magic Number,The method contains a magic number: 3.0f,507
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStraightLine,Magic Number,The method contains a magic number: 2,511
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStraightLine,Magic Number,The method contains a magic number: 0.5,511
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStraightLine,Magic Number,The method contains a magic number: 0.5,511
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStraightLine,Magic Number,The method contains a magic number: 0.5,511
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStraightLine,Magic Number,The method contains a magic number: 0.5,511
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStraightLine,Magic Number,The method contains a magic number: 4,511
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStraightLine,Magic Number,The method contains a magic number: 4,511
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStraightLine,Magic Number,The method contains a magic number: 2,511
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStraightLine,Magic Number,The method contains a magic number: 2,511
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStraightLine,Magic Number,The method contains a magic number: 3,511
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStraightLine,Magic Number,The method contains a magic number: 3,511
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseStraightLine,Magic Number,The method contains a magic number: 4,511
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseSaltPepper,Magic Number,The method contains a magic number: 0.01f,551
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseSaltPepper,Magic Number,The method contains a magic number: 0.01f,551
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseWhiteGaussian,Magic Number,The method contains a magic number: 0xFF,581
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseWhiteGaussian,Magic Number,The method contains a magic number: 255,581
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseWhiteUniform,Magic Number,The method contains a magic number: 0xFF,592
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseWhiteUniform,Magic Number,The method contains a magic number: 256,592
+a3,com.nonononoki.alovoa.lib,OxCaptcha,noiseWhiteUniform,Magic Number,The method contains a magic number: 255,592
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionFishEye,Magic Number,The method contains a magic number: 4,607
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionFishEye,Magic Number,The method contains a magic number: 3,607
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionFishEye,Magic Number,The method contains a magic number: 2,607
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionFishEye,Magic Number,The method contains a magic number: 2,607
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionStretch,Magic Number,The method contains a magic number: 2,669
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionStretch,Magic Number,The method contains a magic number: 2,669
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric,Magic Number,The method contains a magic number: 4000,681
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric,Magic Number,The method contains a magic number: 2,681
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric,Magic Number,The method contains a magic number: 3,681
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric,Magic Number,The method contains a magic number: 2,685
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric,Magic Number,The method contains a magic number: 2,685
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric2,Magic Number,The method contains a magic number: 24,702
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric2,Complex Conditional,The conditional expression sx < 0 || sx > _width - 2 || sy < 0 || sy > _height - 2 is complex.,706
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric2,Magic Number,The method contains a magic number: 2,706
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric2,Magic Number,The method contains a magic number: 0.5,706
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric2,Magic Number,The method contains a magic number: 2,706
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric2,Magic Number,The method contains a magic number: 0.5,706
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric2,Magic Number,The method contains a magic number: 2,706
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric2,Magic Number,The method contains a magic number: 2.2,706
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric2,Magic Number,The method contains a magic number: 2,706
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric2,Magic Number,The method contains a magic number: 2.2,706
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric2,Magic Number,The method contains a magic number: 2,706
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric2,Magic Number,The method contains a magic number: 2,706
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElectric2,Magic Number,The method contains a magic number: 255,706
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear2,Magic Number,The method contains a magic number: 2,754
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear2,Magic Number,The method contains a magic number: 6,754
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear2,Magic Number,The method contains a magic number: 30,754
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear2,Magic Number,The method contains a magic number: 2,754
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear2,Magic Number,The method contains a magic number: 7,754
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear2,Magic Number,The method contains a magic number: 2,754
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear2,Magic Number,The method contains a magic number: 10,754
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear2,Magic Number,The method contains a magic number: 20,754
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear2,Magic Number,The method contains a magic number: 2,754
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear2,Magic Number,The method contains a magic number: 15,754
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear2,Long Parameter List,The method has 6 parameters. ,764
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear,Magic Number,The method contains a magic number: 10,803
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear,Magic Number,The method contains a magic number: 8,803
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear,Magic Number,The method contains a magic number: 8,803
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear,Magic Number,The method contains a magic number: 8,803
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear,Magic Number,The method contains a magic number: 10,803
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear,Magic Number,The method contains a magic number: 8,803
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear,Magic Number,The method contains a magic number: 8,803
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionShear,Magic Number,The method contains a magic number: 8,803
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,Magic Number,The method contains a magic number: 38,817
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,Magic Number,The method contains a magic number: 11,821
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,Magic Number,The method contains a magic number: 8,821
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,Complex Conditional,The conditional expression sx < 0 || sx > _width - 2 || sy < 0 || sy > _height - 2 is complex.,825
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,Complex Method,Cyclomatic complexity of the method is 8,825
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,Magic Number,The method contains a magic number: 2,825
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,Magic Number,The method contains a magic number: 0.5,825
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,Magic Number,The method contains a magic number: 2,825
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,Magic Number,The method contains a magic number: 0.5,825
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,Magic Number,The method contains a magic number: 0.1,825
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,Magic Number,The method contains a magic number: 5,825
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,Magic Number,The method contains a magic number: 0.1,825
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,Magic Number,The method contains a magic number: 5,825
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,Magic Number,The method contains a magic number: 2,825
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,Magic Number,The method contains a magic number: 2,825
+a3,com.nonononoki.alovoa.lib,OxCaptcha,distortionElastic,Magic Number,The method contains a magic number: 255,825
+a3,com.nonononoki.alovoa.lib,OxCaptcha,normalize,Magic Number,The method contains a magic number: 2,879
+a3,com.nonononoki.alovoa.lib,OxCaptcha,normalize,Magic Number,The method contains a magic number: 255,879
+a3,com.nonononoki.alovoa.lib,OxCaptcha,recenter,Complex Method,Cyclomatic complexity of the method is 9,903
+a3,com.nonononoki.alovoa.lib,OxCaptcha,recenter,Magic Number,The method contains a magic number: 2,903
+a3,com.nonononoki.alovoa.lib,OxCaptcha,recenter,Magic Number,The method contains a magic number: 2,903
+a3,com.nonononoki.alovoa.lib,OxCaptcha,load,Magic Number,The method contains a magic number: 0xFF,944
+a3,com.nonononoki.alovoa.lib,OxCaptcha,getImageArray2D,Magic Number,The method contains a magic number: 16,989
+a3,com.nonononoki.alovoa.lib,OxCaptcha,getImageArray2D,Magic Number,The method contains a magic number: 0xff,989
+a3,com.nonononoki.alovoa.lib,OxCaptcha,getImageArray1D,Magic Number,The method contains a magic number: 16,1001
+a3,com.nonononoki.alovoa.lib,OxCaptcha,getImageArray1D,Magic Number,The method contains a magic number: 0xff,1001
+a3,com.nonononoki.alovoa.lib,OxCaptcha,fishEyeFormula,Magic Number,The method contains a magic number: 0.75D,1024
+a3,com.nonononoki.alovoa.lib,OxCaptcha,fishEyeFormula,Magic Number,The method contains a magic number: 1.5D,1024
+a3,com.nonononoki.alovoa.lib,OxCaptcha,fishEyeFormula,Magic Number,The method contains a magic number: 0.25D,1024
+a3,com.nonononoki.alovoa.lib,OxCaptcha,shearX,Long Parameter List,The method has 5 parameters. ,1044
+a3,com.nonononoki.alovoa.lib,OxCaptcha,shearX,Magic Number,The method contains a magic number: 15,1044
+a3,com.nonononoki.alovoa.lib,OxCaptcha,shearX,Magic Number,The method contains a magic number: 6.2831853071795862D,1044
+a3,com.nonononoki.alovoa.lib,OxCaptcha,shearY,Long Parameter List,The method has 5 parameters. ,1061
+a3,com.nonononoki.alovoa.lib,OxCaptcha,shearY,Magic Number,The method contains a magic number: 15,1061
+a3,com.nonononoki.alovoa.lib,OxCaptcha,shearY,Magic Number,The method contains a magic number: 6.2831853071795862D,1061
+a3,com.nonononoki.alovoa.lib,OxCaptcha,singlePixelConvolution,Long Parameter List,The method has 6 parameters. ,1077
+a3,com.nonononoki.alovoa.lib,OxCaptcha,convolution2D,Long Parameter List,The method has 6 parameters. ,1088
+a3,com.nonononoki.alovoa.lib,OxCaptcha,convolution2DPadded,Long Parameter List,The method has 6 parameters. ,1108
+a3,com.nonononoki.alovoa.lib,OxCaptcha,convolution2DPadded,Magic Number,The method contains a magic number: 2,1108
+a3,com.nonononoki.alovoa.lib,OxCaptcha,convolution2DPadded,Magic Number,The method contains a magic number: 2,1108
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gaussianDiscrete2D,Long Statement,The length of the statement "g=g + ((1 / (2 * Math.PI * theta* theta)) * Math.pow(Math.E`-(xSubPixel * xSubPixel + ySubPixel * ySubPixel) / (2 * theta * theta)));" is 133.,1132
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gaussianDiscrete2D,Magic Number,The method contains a magic number: 0.5,1132
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gaussianDiscrete2D,Magic Number,The method contains a magic number: 0.55,1132
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gaussianDiscrete2D,Magic Number,The method contains a magic number: 0.1,1132
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gaussianDiscrete2D,Magic Number,The method contains a magic number: 0.5,1132
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gaussianDiscrete2D,Magic Number,The method contains a magic number: 0.55,1132
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gaussianDiscrete2D,Magic Number,The method contains a magic number: 0.1,1132
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gaussianDiscrete2D,Magic Number,The method contains a magic number: 2,1132
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gaussianDiscrete2D,Magic Number,The method contains a magic number: 2,1132
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gaussianDiscrete2D,Magic Number,The method contains a magic number: 121,1132
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gaussian2D,Magic Number,The method contains a magic number: 2,1144
+a3,com.nonononoki.alovoa.lib,OxCaptcha,gaussian2D,Magic Number,The method contains a magic number: 2,1144
+a3,com.nonononoki.alovoa.repo,UserRepository,usersSearch,Long Statement,The length of the statement "return usersSearchQuery(request.getAge()`request.getMinDateDob()`request.getMaxDateDob()`request.getMinLat()`request.getMaxLat()`request.getMinLong()`request.getMaxLong()`request.getIntentionId()`request.getLikeIds()`request.getHideIds()`request.getBlockIds()`request.getGenderIds()`page);" is 289.,24
+a3,com.nonononoki.alovoa.repo,UserRepository,usersSearchQuery,Long Parameter List,The method has 13 parameters. ,30
+a3,com.nonononoki.alovoa.repo,UserRepository,usersSearchAllIgnoreLocation,Long Statement,The length of the statement "return usersSearchIgnoreLocation(request.getAge()`request.getMinDateDob()`request.getMaxDateDob()`request.getIntentionId()`request.getLikeIds()`request.getHideIds()`request.getBlockIds()`request.getGenderIds()`page);" is 216.,43
+a3,com.nonononoki.alovoa.repo,UserRepository,usersSearchIgnoreLocation,Long Parameter List,The method has 9 parameters. ,50
+a3,com.nonononoki.alovoa.repo,UserRepository,usersSearchAllIgnoreLocationAndIntention,Long Statement,The length of the statement "return findTop200ByDisabledFalseAndAdminFalseAndConfirmedTrueAndIntentionNotNullAndLocationLatitudeNotNullAndProfilePictureNotNullAndDatesDateOfBirthGreaterThanEqualAndDatesDateOfBirthLessThanEqualAndIdNotInAndIdNotInAndIdNotInAndGenderIdIn(request.getMinDateDob()`request.getMaxDateDob()`request.getLikeIds()`request.getHideIds()`request.getBlockIds()`request.getGenderIds()`sort);" is 382.,60
+a3,com.nonononoki.alovoa.repo,UserRepository,usersSearchAllIgnoreAll,Long Statement,The length of the statement "return findTop50ByDisabledFalseAndAdminFalseAndConfirmedTrueAndIntentionNotNullAndLocationLatitudeNotNullAndProfilePictureNotNullAndDatesDateOfBirthGreaterThanEqualAndDatesDateOfBirthLessThanEqualAndIdNotInAndIdNotInAndIdNotIn(request.getMinDateDob()`request.getMaxDateDob()`request.getLikeIds()`request.getHideIds()`request.getBlockIds()`sort);" is 345.,67
+a3,com.nonononoki.alovoa.repo,UserRepository,usersDonate,Long Statement,The length of the statement "return findTop20ByDisabledFalseAndAdminFalseAndConfirmedTrueAndIntentionNotNullAndLocationLatitudeNotNullAndProfilePictureNotNullAndDatesDateOfBirthGreaterThanEqualAndDatesDateOfBirthLessThanEqualOrderByTotalDonationsDesc(minDate`maxDate);" is 239.,73
+a3,com.nonononoki.alovoa.repo,UserRepository,adminSearch,Long Statement,The length of the statement "return findTop100ByDisabledFalseAndAdminFalseAndConfirmedTrueAndIntentionNotNullAndLocationLatitudeNotNullAndProfilePictureNotNullOrderByDatesCreationDateDesc();" is 161.,78
+a3,com.nonononoki.alovoa.repo,UserRepository,findTop200ByDisabledFalseAndAdminFalseAndConfirmedTrueAndIntentionNotNullAndLocationLatitudeNotNullAndProfilePictureNotNullAndDatesDateOfBirthGreaterThanEqualAndDatesDateOfBirthLessThanEqualAndIdNotInAndIdNotInAndIdNotInAndGenderIdIn,Long Parameter List,The method has 7 parameters. ,87
+a3,com.nonononoki.alovoa.repo,UserRepository,findTop50ByDisabledFalseAndAdminFalseAndConfirmedTrueAndIntentionNotNullAndLocationLatitudeNotNullAndProfilePictureNotNullAndDatesDateOfBirthGreaterThanEqualAndDatesDateOfBirthLessThanEqualAndIdNotInAndIdNotInAndIdNotIn,Long Parameter List,The method has 6 parameters. ,91
+a3,com.nonononoki.alovoa.rest,Oauth2Controller,oauth2Success,Complex Conditional,The conditional expression !user.isAdmin() && user.getProfilePicture() == null && user.getDescription() == null is complex.,101
+a3,com.nonononoki.alovoa.rest,Oauth2Controller,oauth2Success,Complex Method,Cyclomatic complexity of the method is 13,101
+a3,com.nonononoki.alovoa.rest,Oauth2Controller,oauth2Success,Long Statement,The length of the statement "String url=new String(Base64.getDecoder().decode((String)httpSession.getAttribute(REDIRECT_URL))`StandardCharsets.UTF_8);" is 121.,101
+a3,com.nonononoki.alovoa.rest,Oauth2Controller,oauth2Success,Long Statement,The length of the statement "String url=new String(Base64.getDecoder().decode((String)httpSession.getAttribute(REDIRECT_URL))`StandardCharsets.UTF_8);" is 121.,101
+a3,com.nonononoki.alovoa.rest,Oauth2Controller,getRememberMeCookie,Long Statement,The length of the statement "Cookie cookieRememberMe=securityConfig.getOAuthRememberMeServices().getRememberMeCookie(rememberCookieValue`request`response);" is 126.,198
+a3,com.nonononoki.alovoa.rest,SearchController,getUsers,Long Parameter List,The method has 5 parameters. ,34
+a3,com.nonononoki.alovoa.rest,SearchController,getUsersModel,Long Parameter List,The method has 5 parameters. ,43
