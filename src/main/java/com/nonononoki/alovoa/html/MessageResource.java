@@ -27,6 +27,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class MessageResource {
@@ -100,4 +101,5 @@ public class MessageResource {
         conversationRepo.saveAndFlush(c);
         return mav;
     }
+
 }

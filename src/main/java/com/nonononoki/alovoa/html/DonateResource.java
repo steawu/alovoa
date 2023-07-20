@@ -19,6 +19,9 @@ import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Controller
 public class DonateResource {
 
@@ -39,5 +42,15 @@ public class DonateResource {
         User user = authService.getCurrentUser(true);
         mav.addObject("user", UserDto.userToUserDto(user, user, userService, textEncryptor, UserDto.NO_MEDIA));
         return mav;
+    }
+
+    @GetMapping("/api/v1/resource/donate")
+    public Map<String, Object> donateResource()
+            throws InvalidKeyException, IllegalBlockSizeException, BadPaddingException, NoSuchAlgorithmException,
+            NoSuchPaddingException, InvalidAlgorithmParameterException, UnsupportedEncodingException, AlovoaException {
+        Map<String, Object> model = new HashMap<>();
+        User user = authService.getCurrentUser(true);
+        model.put("user", UserDto.userToUserDto(user, user, userService, textEncryptor, UserDto.NO_MEDIA));
+        return model;
     }
 }

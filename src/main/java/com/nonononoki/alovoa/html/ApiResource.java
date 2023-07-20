@@ -19,10 +19,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.nonononoki.alovoa.model.AlovoaException;
 
+//Refactory multi-faceted abstraction by extract methods into separate classes
 @RestController
 @RequestMapping("/api/v1/resource")
 public class ApiResource {
-
+/*
 	@Autowired
 	private DonateResource donateResource;
 
@@ -129,4 +130,6 @@ public class ApiResource {
 			InvalidAlgorithmParameterException, UnsupportedEncodingException, AlovoaException {
 		return dislikedUsersResource.dislikedUsers().getModel();
 	}
+
+ */
 }
