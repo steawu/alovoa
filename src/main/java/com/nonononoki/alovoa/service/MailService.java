@@ -5,6 +5,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Locale;
 
+import com.nonononoki.alovoa.FileUtils;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
 
@@ -89,7 +90,8 @@ public class MailService {
 	}
 
 	private String getEmailText(String body) throws IOException {
-		String template = Tools.getResourceText("static/templates/email.html");
+	//	String template = Tools.getResourceText("static/templates/email.html");
+		String template = FileUtils.getResourceText("static/templates/email.html");
 		String hrefWebsite = appDomain + "/";
 		String hrefDonate = appDomain + "/donate-list";
 		String imgSrc = Tools.imageToB64("static/img/mail_icon.jpg", "jpeg");

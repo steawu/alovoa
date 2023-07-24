@@ -119,7 +119,7 @@ public class Tools {
 		return DateUtils.calcUserAge(dateOfBirth);
 	}
 
-	public static String inputStreamToString(InputStream inputStream) throws IOException {
+/*	public static String inputStreamToString(InputStream inputStream) throws IOException {
 		return StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8);
 	}
 
@@ -133,23 +133,29 @@ public class Tools {
 		byte[] bytes = StreamUtils.copyToByteArray(resource.getInputStream());
 		return Base64.getEncoder().encodeToString(bytes);
 	}
-
+*/
 	public static String imageToB64(String path, String mime) throws IOException {
-		String b64 = resourceToB64(path);
+	//	String b64 = resourceToB64(path);
+	//	return B64IMAGEPREFIX + mime + B64PREFIX + b64;
+
+		String b64 = FileUtils.resourceToBase64(path);
 		return B64IMAGEPREFIX + mime + B64PREFIX + b64;
+
 	}
 
 	public static boolean isTextContainingLineFromFile(String path, String text) throws IOException {
+	//	String content = getResourceText(path);
+		String content = FileUtils.getResourceText(path);
+	//	String[] lines = content.split(System.getProperty("line.separator"));
 
-		String content = getResourceText(path);
-		String[] lines = content.split(System.getProperty("line.separator"));
+	//	for (int i = 0; i < lines.length; i++) {
+	//		if (text.contains(lines[i])) {
+	//			return true;
+	//		}
+	//	}
+	//	return false;
+		return FileUtils.isTextContainingLine(content, text);
 
-		for (int i = 0; i < lines.length; i++) {
-			if (text.contains(lines[i])) {
-				return true;
-			}
-		}
-		return false;
 	}
 
 	public static boolean binaryStringToBoolean(String b) {

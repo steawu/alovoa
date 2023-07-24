@@ -1,6 +1,7 @@
 package com.nonononoki.alovoa.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.nonononoki.alovoa.FileUtils;
 import com.nonononoki.alovoa.Tools;
 import com.nonononoki.alovoa.component.TextEncryptorConverter;
 import com.nonononoki.alovoa.entity.Captcha;
@@ -199,7 +200,8 @@ class UserServiceTest {
         assertNull(authService.getCurrentUser().getProfilePicture());
         userService.updateProfilePicture(img3);
         assertNotNull(authService.getCurrentUser().getProfilePicture());
-        userService.updateAudio(Tools.resourceToB64("audio/file_example_MP3_700KB.mp3"), "mpeg");
+      //  userService.updateAudio(Tools.resourceToB64("audio/file_example_MP3_700KB.mp3"), "mpeg");
+        userService.updateAudio(FileUtils.resourceToBase64("audio/file_example_MP3_700KB.mp3"), "mpeg");
         assertNotNull(user3.getAudio());
         userService.deleteAudio();
         assertNull(user3.getAudio());
